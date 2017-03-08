@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/25 11:27:08 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/04 15:00:46 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/08 10:30:18 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,24 +60,24 @@ typedef struct				s_arg
 	va_list					*ap;
 }							t_arg;
 
-typedef struct				s_handler
+typedef struct				s_pfhandler
 {
 	char					c;
 	char					*(*f)(t_arg *arg);
-}							t_handler;
+}							t_pfhandler;
 
 typedef struct				s_pf
 {
 	int						ret;
 	int						len;
 	char					*buf;
-	t_handler				handlers[NB_SPEC];
+	t_pfhandler				handlers[NB_SPEC];
 	t_arg					*arg;
 	va_list					*ap;
 }							t_pf;
 
-int							ft_sprintf(char *str, const char *format, ...);
 int							ft_printf(const char *format, ...);
+int							ft_sprintf(char *str, const char *format, ...);
 int							ft_fprintf(int fd, const char *format, ...);
 void						init_pf(t_pf *pf);
 void						split_args(t_pf *pf, const char *format);
