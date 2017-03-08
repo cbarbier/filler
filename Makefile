@@ -6,7 +6,7 @@
 #    By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/04 14:32:18 by cbarbier          #+#    #+#              #
-#    Updated: 2017/03/06 14:11:33 by cbarbier         ###   ########.fr        #
+#    Updated: 2017/03/08 15:15:49 by cbarbier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,9 @@ NAME			= cbarbier.filler
 LIB				= libft/libft.a
 CC				= gcc
 CFLAGS			= -Wall -Wextra -Werror
-SRCS			= srcs/main.c
+SRCS			= srcs/main.c \
+				  srcs/init_game.c \
+				  srcs/piece.c
 
 all: $(NAME)
 

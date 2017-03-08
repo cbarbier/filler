@@ -109,7 +109,7 @@ SRC  = ft_memset.c \
 	   ft_printf_src/handlers/pf_handler_percent.c \
 	   ft_printf_src/handlers/pf_handler_b.c \
 	   ft_printf_src/handlers/pf_handler_f.c \
-	   ft_printf_src/handlers/pf_handler_other.c
+	   ft_printf_src/handlers/pf_handler_other.c \
 
 OBJ = $(SRC:.c=.o)
 
