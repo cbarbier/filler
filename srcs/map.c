@@ -1,37 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   map.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/04 14:39:04 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/09 19:20:22 by cbarbier         ###   ########.fr       */
+/*   Created: 2017/03/09 11:26:09 by cbarbier          #+#    #+#             */
+/*   Updated: 2017/03/09 18:40:03 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/filler.h"
 
-int			main(int argc, char **argv)
+int			get_map(t_game *g)
 {
-	char		*line;
-	t_game		g;
+	int		index;
+	char	*line;
 
-	if (!argv[argc - 1])
+	index = 0;
+
+	if (get_next_line(0, &line) < 0)
 		return (0);
-	if (!init_game(&g))
-		return (1);
-	while (get_next_line(0, &line) > 0)
+	ft_strdel(&line);
+	while (index < g->height)
 	{
-		ft_fprintf(g.fd, "main %s\n", line);
-		if (!ft_strncmp(line, "Plateau", 7))
-			get_map(&g);
-		else if (!ft_strncmp(line, "Piece", 5))
-		{
-			get_pieces(&g, line);
-			put_piece(&g);
-		}
+		if (get_next_line(0, &line) < 0)
+			return (0);
+		ft_strdel(&(g->map[index]));
+		g->map[index] = ft_strsub(line, 4, g->width);
+		ft_fprintf(g->fd, "line read : %s\n", g->map[index]);
+		index++;
 		ft_strdel(&line);
 	}
-	return (0);
+	return (1);
 }
