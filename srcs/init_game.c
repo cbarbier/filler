@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/08 13:43:00 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/09 18:41:40 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/10 12:56:24 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@
 
 static int	init_map(t_game *g)
 {
-	if (!(g->map = ft_memalloc(g->height * sizeof(char *))))
+	if (!(g->map = (char **)ft_memalloc(g->height * sizeof(char *))))
 			return (0);
+	if (!(g->testmap = (char **)ft_memalloc(g->height * sizeof(char *))))
+		return (0);
 	if (!get_map(g))
 		return (0);
 	return (1);
