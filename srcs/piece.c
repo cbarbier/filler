@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 14:42:42 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/09 16:00:49 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/10 17:27:22 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ static int	fill_piece_map(t_game *g)
 	index = 0;
 	while (index < g->piece->h)
 	{
-		if (get_next_line(0, &line) < 0)
+		if (get_next_line(0, &line) <= 0)
 			return (0);
 		g->piece->map[index] = line;
 		ft_fprintf(g->fd, "piece line %d %s\n", index, g->piece->map[index]);
@@ -66,6 +66,7 @@ int			get_pieces(t_game *g, char *line)
 	ft_bzero(p, sizeof(t_piece));
 	p->h = ft_atoi(line + 6);
 	p->w = ft_atoi(ft_strrchr(line, ' ') + 1);
+	ft_fprintf(g->fd, "piece h%d w%d\n", p->h, p->w);
 	if (!(p->map = (char **)ft_memalloc(p->h * sizeof(char))))
 		return (0);
 	if (!fill_piece_map(g))

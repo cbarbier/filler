@@ -6,11 +6,33 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/04 14:39:04 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/09 19:20:22 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/10 17:13:45 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/filler.h"
+
+static int	free_piece(t_game *g)
+{
+	int			index;
+
+	index = 0;
+	while (index < g->piece->h)
+		free(g->piece->map[index++]);
+	free(g->piece->map);
+	g->piece->map = 0;
+	return (1);
+}
+
+static int	put_piece(t_game *g)
+{
+	t_piece		*p;
+
+	p = g->piece;
+	ft_printf("%d %d\n", g->sol.y - p->dy, g->sol.x - p->dx);
+	ft_fprintf(g->fd, "put %d %d\n", g->sol.y - p->dy, g->sol.x - p->dx);
+	return (1);
+}
 
 int			main(int argc, char **argv)
 {
@@ -28,8 +50,11 @@ int			main(int argc, char **argv)
 			get_map(&g);
 		else if (!ft_strncmp(line, "Piece", 5))
 		{
+			ft_bzero(&(g.sol), sizeof(t_sol));
 			get_pieces(&g, line);
+			compute_piece(&g);
 			put_piece(&g);
+			free_piece(&g);
 		}
 		ft_strdel(&line);
 	}

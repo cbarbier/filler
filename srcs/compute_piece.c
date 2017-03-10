@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/09 15:47:22 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/09 19:28:27 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/10 12:25:41 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ static int	can_put(t_game *g, int i, int j)
 	return (count == 1 ? 1 : 0);
 }
 
-int			put_piece(t_game *g)
+int			compute_piece(t_game *g)
 {
 	int		i;
 	int		j;
@@ -55,9 +55,8 @@ int			put_piece(t_game *g)
 		{
 			if (can_put(g, i, j))
 			{
-				ft_printf("%d %d\n", j - p->dy, i - p->dx);
-				ft_fprintf(g->fd, "put %d %d\n", j - p->dy, i - p->dx);
-				return (1);
+				ft_fprintf(g->fd, "solution found %d %d\n", i, j);
+				test_piece(g, i, j);
 			}
 			i++;
 		}
