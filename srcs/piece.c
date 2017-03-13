@@ -67,7 +67,7 @@ int			get_pieces(t_game *g, char *line)
 	p->h = ft_atoi(line + 6);
 	p->w = ft_atoi(ft_strrchr(line, ' ') + 1);
 	ft_fprintf(g->fd, "piece h%d w%d\n", p->h, p->w);
-	if (!(p->map = (char **)ft_memalloc(p->h * sizeof(char))))
+	if (!(p->map = (char **)ft_memalloc(p->h * sizeof(char*))))
 		return (0);
 	if (!fill_piece_map(g))
 		return (0);
