@@ -6,7 +6,7 @@
 #    By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/04 14:32:18 by cbarbier          #+#    #+#              #
-#    Updated: 2017/03/10 12:15:16 by cbarbier         ###   ########.fr        #
+#    Updated: 2017/03/14 09:23:18 by cbarbier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ SRCS			= srcs/main.c \
 				  srcs/init_game.c \
 				  srcs/map.c \
 				  srcs/compute_piece.c \
+				  srcs/set_info.c \
 				  srcs/test_piece.c \
 				  srcs/piece.c
 

@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/10 11:37:55 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/13 15:40:54 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/14 08:40:23 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,6 @@ static int		set_deltas(int	*d, int i, int j)
 
 static int		sol_compare(t_game *g, int *d, t_sol *tmpsol)
 {
-	static int count = 0;
 	int		i;
 	int		j;
 	t_piece	*p;
@@ -70,9 +69,9 @@ static int		sol_compare(t_game *g, int *d, t_sol *tmpsol)
 	}
 	tmpsol->dy = d[3] - d[1] + 1;
 	tmpsol->dx = d[2] - d[0] + 1;
-	if (count % 3 == 0)
-		return (tmpsol->dx - g->sol.dx);
-	return (tmpsol->dy - g->sol.dy);
+	if (abs(tmpsol->x - (g->width / 2)) < abs(g->sol.x - (g->width / 2)) && tmpsol->dy > g->sol.dy)
+		return (1);
+	return (0);
 }
 
 int				test_piece(t_game *g,  int x, int y)
