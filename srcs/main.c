@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/04 14:39:04 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/10 17:13:45 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/14 10:39:32 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ int			main(int argc, char **argv)
 			get_map(&g);
 		else if (!ft_strncmp(line, "Piece", 5))
 		{
+			set_info(&g);
 			ft_bzero(&(g.sol), sizeof(t_sol));
 			get_pieces(&g, line);
 			compute_piece(&g);
