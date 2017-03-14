@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/08 13:43:00 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/10 12:56:24 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/14 10:43:03 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,15 @@ static int	get_player_id(t_game *g)
 	return (1);
 }
 
+static int	init_infos(t_game *g, t_info *info)
+{
+	info->minx = g->width;
+	info->maxx = 0;
+	info->miny = g->height;
+	info->maxy = 0;
+	return (1);
+}
+
 int			init_game(t_game *g)
 {
 	ft_bzero(g, sizeof(t_game));
@@ -58,5 +67,7 @@ int			init_game(t_game *g)
 	ft_fprintf(g->fd, "p%d h%d w%d\n", g->player, g->height, g->width);
 	if (!init_map(g))
 		return(0);
+	init_infos(g, &(g->myinfo));
+	init_infos(g, &(g->ainfo));
 	return (1);
 }

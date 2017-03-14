@@ -6,13 +6,14 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 14:12:45 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/14 09:23:51 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/14 11:10:50 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FILLER_H
 # define FILLER_H
 # include "../libft/includes/libft.h"
+# include <math.h>
 
 typedef struct	s_info
 {
@@ -63,6 +64,6 @@ int			lets_play(t_game *g);
 int			get_pieces(t_game *g, char *line);
 int			get_map(t_game *g);
 int			compute_piece(t_game *g);
-int			test_piece(t_game *g,  int x, int y);
+int			test_piece(t_game *g,  int x, int y, int *count);
 int			set_info(t_game *g);
 #endif

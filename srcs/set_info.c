@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/14 09:04:03 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/14 09:31:12 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/14 10:37:31 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,9 @@ int					set_info(t_game *g)
 		while (i < g->width)
 		{
 			if (g->map[j][i] == g->adv)
-				set_info(&(g->ainfo), i, j);
+				set_deltas(&(g->ainfo), i, j);
 			else if (g->map[j][i] == g->me)
-				set_info(&(g->myinfo), i, j);
+				set_deltas(&(g->myinfo), i, j);
 			i++;
 		}
 		j++;

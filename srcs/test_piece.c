@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/10 11:37:55 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/14 08:40:23 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/14 11:17:48 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,12 +69,12 @@ static int		sol_compare(t_game *g, int *d, t_sol *tmpsol)
 	}
 	tmpsol->dy = d[3] - d[1] + 1;
 	tmpsol->dx = d[2] - d[0] + 1;
-	if (abs(tmpsol->x - (g->width / 2)) < abs(g->sol.x - (g->width / 2)) && tmpsol->dy > g->sol.dy)
+	if (sqrt(pow(tmpsol->x - g->ainfo.cx, 2) + pow(tmpsol->y - g->ainfo.cy, 2)) < sqrt(pow(g->sol.x - g->ainfo.cx, 2) + pow(g->sol.y - g->ainfo.cy, 2)))
 		return (1);
 	return (0);
 }
 
-int				test_piece(t_game *g,  int x, int y)
+int				test_piece(t_game *g,  int x, int y, int *count)
 {
 	int		deltas[4];
 	t_sol	tmp;
@@ -86,9 +86,10 @@ int				test_piece(t_game *g,  int x, int y)
 	update_piece(g, x, y, 1);
 	tmp.x = x;
 	tmp.y = y;
-	if ((sol_compare(g, deltas, &tmp)) > 0)
+	if (!*count || (sol_compare(g, deltas, &tmp)) > 0)
 		g->sol = tmp;
 	ft_fprintf(g->fd, "delta xmin%d ymin%d xmax%d ymax%d\ndx %d dy %d\n", deltas[0], deltas[1], deltas[2], deltas[3], tmp.dx, tmp.dy);
 	update_piece(g, x, y, 0);
+	*count = *count + 1;
 	return (1);
 }

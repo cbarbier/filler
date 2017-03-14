@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/09 15:47:22 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/14 09:14:23 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/14 11:09:22 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,9 +45,11 @@ int			compute_piece(t_game *g)
 	int		i;
 	int		j;
 	t_piece	*p;
+	int		count;
 
 	p = g->piece;
 	j = 0;
+	count = 0;
 	while (j + p->dh <= g->height)
 	{
 		i = 0;
@@ -56,7 +58,7 @@ int			compute_piece(t_game *g)
 			if (can_put(g, i, j))
 			{
 				ft_fprintf(g->fd, "solution found %d %d\n", i, j);
-				test_piece(g, i, j);
+				test_piece(g, i, j , &count);
 			}
 			i++;
 		}
