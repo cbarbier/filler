@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 14:12:45 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/14 11:10:50 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/14 17:13:35 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ typedef	struct	s_game
 	t_info	myinfo;
 	t_info	ainfo;
 	t_sol	sol;
+	int		loopcount;
 }				t_game;
 
 int			init_game(t_game *g);
