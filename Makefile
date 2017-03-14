@@ -6,7 +6,7 @@
 #    By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/04 14:32:18 by cbarbier          #+#    #+#              #
-#    Updated: 2017/03/14 09:23:18 by cbarbier         ###   ########.fr        #
+#    Updated: 2017/03/14 15:18:54 by cbarbier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,5 +43,8 @@ fclean: clean
 	@make -C libft fclean
 
 re: fclean all
+
+test:
+	rm test.txt && touch test.txt && ./filler_vm -p2 ./cbarbier.filler -p1 players/carli.filler -f maps/map00
 
 .PHONY: clean fclean all re

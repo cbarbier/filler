@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/09 15:47:22 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/14 11:09:22 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/14 17:13:52 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ static int	can_put(t_game *g, int i, int j)
 		if (p->map[p->dy + y][p->dx + x] == '*' &&
 				g->map[j + y][i + x] == g->me)
 			count++;
-		if (p->map[p->dy + y][p->dx + x] == '*' &&
-				g->map[j + y][i + x] == g->adv)
+		if (count > 1 || (p->map[p->dy + y][p->dx + x] == '*' &&
+				g->map[j + y][i + x] == g->adv))
 			return (0);
 		x++;
 	}
