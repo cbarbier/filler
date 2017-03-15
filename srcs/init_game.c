@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/08 13:43:00 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/14 10:43:03 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/15 14:16:55 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static int	init_map(t_game *g)
 {
 	if (!(g->map = (char **)ft_memalloc(g->height * sizeof(char *))))
-			return (0);
+		return (0);
 	if (!(g->testmap = (char **)ft_memalloc(g->height * sizeof(char *))))
 		return (0);
 	if (!get_map(g))
@@ -44,6 +44,7 @@ static int	get_player_id(t_game *g)
 	ft_strdel(&line);
 	g->me = (g->player == 1 ? 'O' : 'X');
 	g->adv = (g->me == 'O' ? 'X' : 'O');
+	ft_fprintf(g->fd, "player id %d pion %c\n", g->player, g->me);
 	return (1);
 }
 

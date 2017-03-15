@@ -6,11 +6,21 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/04 14:39:04 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/14 17:12:34 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/15 16:28:42 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/filler.h"
+
+int			put_map(t_game *g, char **m)
+{
+	int		j;
+	
+	j = 0;
+	while (j < g->height)
+		ft_fprintf(g->fd, "%s\n", m[j++]);
+	return (1);
+}
 
 static int	free_piece(t_game *g)
 {
@@ -18,8 +28,7 @@ static int	free_piece(t_game *g)
 
 	index = 0;
 	while (index < g->piece->h)
-		free(g->piece->map[index++]);
-	free(g->piece->map);
+		free(g->piece->map[index++]); free(g->piece->map);
 	g->piece->map = 0;
 	return (1);
 }
@@ -53,12 +62,13 @@ int			main(int argc, char **argv)
 		else if (!ft_strncmp(line, "Piece", 5))
 		{
 			set_info(&g);
-			ft_bzero(&(g.sol), sizeof(t_sol));
+			ft_bzero(&(g.sol), sizeof(t_info));
 			get_pieces(&g, line);
 			compute_piece(&g);
 			put_piece(&g);
 			free_piece(&g);
 			g.loopcount++;
+			ft_fprintf(g.fd, "lastadv pos x:%d y%d\n", g.advpos.x, g.advpos.y);
 		}
 		ft_strdel(&line);
 	}

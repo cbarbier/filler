@@ -6,11 +6,16 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/10 11:37:55 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/14 19:16:18 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/15 19:01:22 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/filler.h"
+
+static void		print_info(t_game *g, t_info *i)
+{
+	ft_fprintf(g->fd, "x %d - %d\ny %d - %d\nd x%d y%d\nc x%d y%d\n", i->minx, i->maxx, i->miny, i->maxy, i->dx, i->dy, i->cx, i->cy);
+}
 
 static int		update_piece(t_game *g, int x, int y, int add)
 {
@@ -25,30 +30,34 @@ static int		update_piece(t_game *g, int x, int y, int add)
 		i = 0;
 		while (i < p->dw)
 		{
-			if (p->map[j][i] == '*' )
-				if (add || (!add && g->map[y + j][x + i] == '*'))
+			if (p->map[j][i] == '*')
+				if (add || (!add && g->map[y + j][x + i] != g->me))
 					g->testmap[y + j][x + i] = (add ? g->me : '.');
 			i++;
 		}
 		j++;
 	}
 	return (1);
+} 
+
+static int		set_deltas(t_game *g, t_info *tmp,  int i, int j) 
+{ 
+	t_info		*myinfo;
+
+	myinfo = &(g->myinfo);
+	tmp->minx = i < myinfo->minx ? i : myinfo->minx;
+	tmp->maxx = i > myinfo->maxx ? i : myinfo->maxx;
+	tmp->miny = j < myinfo->miny ? j : myinfo->miny;
+	tmp->maxy = j > myinfo->maxy ? j : myinfo->maxy;
+	return (1); 
 }
 
-static int		set_deltas(int	*d, int i, int j)
+static int	 distance(t_info *a, t_info *b)
 {
-	if (i < d[0])
-		d[0] = i;
-	if (i > d[2])
-		d[2] = i;
-	if (j < d[1])
-		d[1] = j;
-	if (j > d[3])
-		d[3] = j;
-	return (1);
+	return (abs(a->x - b->x) + abs(a->y - b->y));
 }
 
-static int		sol_compare(t_game *g, int *d, t_sol *tmpsol)
+static int		sol_compare(t_game *g, t_info *tmpsol)
 {
 	int		i;
 	int		j;
@@ -56,40 +65,41 @@ static int		sol_compare(t_game *g, int *d, t_sol *tmpsol)
 
 	p = g->piece;
 	j = 0;
-	while (j < g->height)
+	while (j < p->dh)
 	{
 		i = 0;
-		while (i < g->width)
+		while (i < p->dw)
 		{
-			if (g->testmap[j][i] == g->me)
-				set_deltas(d, i, j);
+			if (g->testmap[tmpsol->y + j][tmpsol->x + i] == g->me)
+				set_deltas(g, tmpsol, tmpsol->x + i, tmpsol->y + j);
 			i++;
 		}
 		j++;
 	}
-	tmpsol->dy = d[3] - d[1] + 1;
-	tmpsol->dx = d[2] - d[0] + 1;
-	if (g->loopcount % 2)
-		return (abs(0 - tmpsol->y) - abs(0 - g->sol.y));
-	return (abs(g->height - tmpsol->y) - abs(g->height - g->sol.y));
+	tmpsol->dy = tmpsol->maxy - tmpsol->miny + 1;
+	tmpsol->dx = tmpsol->maxx - tmpsol->minx + 1;
+	tmpsol->avg = (g->height - tmpsol->maxy + g->width - tmpsol->maxx + tmpsol->miny + tmpsol->minx) / 4.0;
+		return (distance(&(g->sol), &(g->advpos)) - distance(tmpsol, &(g->advpos)));
 }
 
 int				test_piece(t_game *g,  int x, int y, int *count)
 {
-	int		deltas[4];
-	t_sol	tmp;
+	t_info		tmp;
 
-	deltas[0] = g->width;
-	deltas[1] = g->height;
-	deltas[2] = 0;
-	deltas[3] = 0;
-	update_piece(g, x, y, 1);
+	ft_bzero(&tmp, sizeof(t_info));
+	tmp.maxx = g->width;
+	tmp.maxy = g->height;
 	tmp.x = x;
 	tmp.y = y;
-	if (!*count || (sol_compare(g, deltas, &tmp)) < 0)
+	update_piece(g, x, y, 1);
+	ft_fprintf(g->fd, "add on map:\n");
+//	put_map(g, g->testmap);
+	if (!*count || (sol_compare(g, &tmp)) > 0)
 		g->sol = tmp;
-	*count = *count + 1;
-	ft_fprintf(g->fd, "delta xmin%d ymin%d xmax%d ymax%d\ndx %d dy %d\n", deltas[0], deltas[1], deltas[2], deltas[3], tmp.dx, tmp.dy);
 	update_piece(g, x, y, 0);
+	ft_fprintf(g->fd, "remove from map:\n");
+//	put_map(g, g->testmap);
+	print_info(g, &tmp);
+	*count = *count + 1;
 	return (1);
 }
