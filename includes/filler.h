@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 14:12:45 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/14 17:13:35 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/15 16:28:03 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,11 @@
 
 typedef struct	s_info
 {
+	int		x;
+	int		y;
+	int		dx;
+	int		dy;
+	double	avg;
 	int		cx;
 	int		cy;
 	int		minx;
@@ -24,14 +29,6 @@ typedef struct	s_info
 	int 	miny;
 	int		maxy;
 }				t_info;
-
-typedef struct	s_sol
-{
-	int		x;
-	int		y;
-	int		dx;
-	int		dy;
-}				t_sol;
 
 typedef struct	s_piece
 {
@@ -56,7 +53,8 @@ typedef	struct	s_game
 	char	**testmap;
 	t_info	myinfo;
 	t_info	ainfo;
-	t_sol	sol;
+	t_info	sol;
+	t_info	advpos;
 	int		loopcount;
 }				t_game;
 
@@ -67,4 +65,6 @@ int			get_map(t_game *g);
 int			compute_piece(t_game *g);
 int			test_piece(t_game *g,  int x, int y, int *count);
 int			set_info(t_game *g);
+int			put_map(t_game *g, char **m);
+
 #endif
