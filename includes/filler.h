@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 14:12:45 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/15 16:28:03 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/16 11:46:14 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ int			init_game(t_game *g);
 int			lets_play(t_game *g);
 int			get_pieces(t_game *g, char *line);
 int			get_map(t_game *g);
+int			parse_map(t_game *g, int (*f)(t_game *, int, int));
 int			compute_piece(t_game *g);
 int			test_piece(t_game *g,  int x, int y, int *count);
 int			set_info(t_game *g);

@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/14 09:04:03 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/14 10:37:31 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/16 11:25:11 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,25 +32,18 @@ static int			set_center(t_info *info)
 	return (1);
 }
 
+int					set_info_helper(t_game *g, int i, int j)
+{
+	if (g->map[j][i] == g->adv)
+		set_deltas(&(g->ainfo), i, j);
+	else if (g->map[j][i] == g->me)
+		set_deltas(&(g->myinfo), i, j);	
+	return (1);
+}
+
 int					set_info(t_game *g)
 {
-	int		i;
-	int		j;
-
-	j = 0;
-	while (j < g->height)
-	{
-		i = 0;
-		while (i < g->width)
-		{
-			if (g->map[j][i] == g->adv)
-				set_deltas(&(g->ainfo), i, j);
-			else if (g->map[j][i] == g->me)
-				set_deltas(&(g->myinfo), i, j);
-			i++;
-		}
-		j++;
-	}
+	parse_map(g, set_info_helper);
 	set_center(&(g->myinfo));
 	set_center(&(g->ainfo));
 	ft_fprintf(g->fd, "myinfo minx%d maxx%d miny%d maxy%d cx %d cy %d\n", g->myinfo.minx, g->myinfo.maxx, g->myinfo.miny, g->myinfo.maxy, g->myinfo.cx, g->myinfo.cy);
