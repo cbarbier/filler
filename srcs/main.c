@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/04 14:39:04 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/15 16:28:42 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/16 19:21:03 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ static int	put_piece(t_game *g)
 	return (1);
 }
 
+
 int			main(int argc, char **argv)
 {
 	char		*line;
@@ -61,7 +62,7 @@ int			main(int argc, char **argv)
 			get_map(&g);
 		else if (!ft_strncmp(line, "Piece", 5))
 		{
-			set_info(&g);
+		set_info(&g);
 			ft_bzero(&(g.sol), sizeof(t_info));
 			get_pieces(&g, line);
 			compute_piece(&g);
