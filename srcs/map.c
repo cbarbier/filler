@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/09 11:26:09 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/16 16:25:01 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/21 11:07:50 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,15 +41,15 @@ static int	is_target_reached(t_game *g)
 	t = &(g->advpos);
 	m = &(g->myinfo);
 	count = 0;
-	if (m->minx < t->minx)
+	if (m->minx > t->minx)
 		count++;
-	if (m->maxx > t->maxx)
+	if (m->maxx < t->maxx)
 		count++;
-	if (m->miny < t->miny)
+	if (m->miny > t->miny)
 		count++;
-	if (m->maxx > t->maxx)
+	if (m->maxy < t->maxy)
 		count++;
-	return (count == 0 ? 0 : 1);
+	return (count >= 3 ? 1 : 0);
 }
 
 static int	find_adv_last_piece(t_game *g, char *lastr, char *newr, int raw)
@@ -59,7 +59,7 @@ static int	find_adv_last_piece(t_game *g, char *lastr, char *newr, int raw)
 	index = 0;
 	while (index < g->width)
 	{
-		if (lastr[index] != g->adv && newr[index] == g->adv)
+		if ((!g->loopcount || lastr[index] != g->adv) && newr[index] == g->adv)
 		{
 			g->advpos.x = index;
 			g->advpos.y = raw;
