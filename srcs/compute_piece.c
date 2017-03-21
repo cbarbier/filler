@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/09 15:47:22 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/16 19:20:15 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/20 09:23:34 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int			compute_piece(t_game *g)
 			if (can_put(g, i, j))
 			{
 				ft_fprintf(g->fd, "solution found %d %d\n", i, j);
-				test_piece(g, i, j , &count);
+				test_piece(g, i, j, &count);
 			}
 			i++;
 		}

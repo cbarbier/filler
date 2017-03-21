@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/08 13:43:00 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/15 14:16:55 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/21 12:16:00 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,10 @@ static int	init_map(t_game *g)
 		return (0);
 	if (!get_map(g))
 		return (0);
+	g->mystart.x = g->myinfo.minx;
+	g->mystart.y = g->myinfo.maxy;
+	g->aistart.x = g->advpos.minx;
+	g->aistart.y = g->advpos.miny;
 	return (1);
 }
 
@@ -67,7 +71,7 @@ int			init_game(t_game *g)
 		return (0);
 	ft_fprintf(g->fd, "p%d h%d w%d\n", g->player, g->height, g->width);
 	if (!init_map(g))
-		return(0);
+		return (0);
 	init_infos(g, &(g->myinfo));
 	init_infos(g, &(g->ainfo));
 	return (1);

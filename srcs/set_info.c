@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/14 09:04:03 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/16 11:25:11 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/21 12:10:52 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,5 +48,6 @@ int					set_info(t_game *g)
 	set_center(&(g->ainfo));
 	ft_fprintf(g->fd, "myinfo minx%d maxx%d miny%d maxy%d cx %d cy %d\n", g->myinfo.minx, g->myinfo.maxx, g->myinfo.miny, g->myinfo.maxy, g->myinfo.cx, g->myinfo.cy);
 	ft_fprintf(g->fd, "ainfo minx%d maxx%d miny%d maxy%d cx %d cy %d\n", g->ainfo.minx, g->ainfo.maxx, g->ainfo.miny, g->ainfo.maxy, g->ainfo.cx, g->ainfo.cy);
+	ft_fprintf(g->fd, "mystart %d %d   his start %d %d\n", g->mystart.x, g->mystart.y, g->aistart.x, g->aistart.y);
 	return (1);
 }
