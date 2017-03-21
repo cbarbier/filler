@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 14:12:45 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/21 12:13:23 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/21 17:04:20 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,6 @@
 # define FILLER_H
 # include "../libft/includes/libft.h"
 # include <math.h>
-
-typedef struct	s_point
-{
-	int		x;
-	int		y;
-}				t_point;
 
 typedef struct	s_info
 {
@@ -62,8 +56,8 @@ typedef	struct	s_game
 	t_info	sol;
 	t_info	advpos;
 	int		loopcount;
-	t_point	mystart;
-	t_point	aistart;
+	t_info	mystart;
+	t_info	aistart;
 }				t_game;
 
 int			init_game(t_game *g);
