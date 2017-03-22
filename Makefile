@@ -6,7 +6,7 @@
 #    By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/04 14:32:18 by cbarbier          #+#    #+#              #
-#    Updated: 2017/03/21 16:07:26 by cbarbier         ###   ########.fr        #
+#    Updated: 2017/03/22 08:44:34 by cbarbier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,9 @@ SRCS			= srcs/main.c \
 				  srcs/compute_piece.c \
 				  srcs/set_info.c \
 				  srcs/test_piece.c \
-				  srcs/piece.c
+				  srcs/piece.c \
+				  srcs/mlx.c \
+				  srcs/tools.c
 
 all: $(NAME)
 

@@ -6,45 +6,48 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/21 17:20:36 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/21 19:31:08 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/22 09:48:10 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/filler.h"
 
-static int	set_delta(t_game *g, t-env *e)
+static int	set_delta(t_env *e)
 {
 	int		w;
 	int		h;
 
-	w = (W_WIDTH - 300) / g->width - 1;
-	h = (W_HEIGHT - 300) / g->height - 1;
+	w = (W_WIDTH - 300) / e->game->width - 1;
+	h = (W_HEIGHT - 300) / e->game->height - 1;
 	e->d = (w <= h ? w : h);
-}
-
-int			init_env(t_env *env)
-{
-	ft_bzero(env, sizeof(t_env));
-	if (!(env->mlx = mlx_init()))
-		return (0);
-	if (!(env->win = mlx_new_window(env->mlx, W_WIDTH, W_HEIGHT, "filler")))
-		return (0);
+	ft_fprintf(e->game->fd, "############################ delta is %d\n", e->d);
 	return (1);
 }
 
-static int	put_case_to_img(t_game *g, t_env *e, int i, int j)
+int			init_env(t_env *e, t_game *g)
+{
+	ft_bzero(e, sizeof(t_env));
+	if (!(e->mlx = mlx_init()))
+		return (0);
+	if (!(e->win = mlx_new_window(e->mlx, W_WIDTH, W_HEIGHT, "filler")))
+		return (0);
+	e->game = g;
+	set_delta(e);
+	return (1);
+}
+
+static int	put_case_to_img(t_env *e, t_point *p, unsigned int c)
 {
 	int		dx;
 	int		dy;
 
 	dy = 0;
-	dx = 0;
 	while (dy < e->d)
 	{
 		dx = 0;
 		while (dx < e->d)
 		{
-			put_pxl_img(g, e, i + dx, j + dy);
+			put_pxl_img(e, p->x * e->d + dx, p->y * e->d + dy, c);
 			dx++;
 		}
 		dy++;
@@ -52,35 +55,44 @@ static int	put_case_to_img(t_game *g, t_env *e, int i, int j)
 	return (1);
 }
 
-static int	draw_map(t_game *g, t_env *e)
+int			draw_map(t_env *e)
 {
 	t_point		p;
+	char		v;
 
-	while (p.y < g->height)
+	ft_fprintf(e->game->fd, "draw map\n");
+	p.y = 0;
+	while (p.y < e->game->height)
 	{
 		p.x = 0;
-		while (p.x < g->width)
+		while (p.x < e->game->width)
 		{
-			if (!put_case_to_img(g, e, p))
-				return (0);	
+			v = e->game->map[p.y][p.x];
+			if (v == 'O') 
+				put_case_to_img(e, &p, 0xFF0000);
+		   	else if (v == 'X') 
+				put_case_to_img(e, &p, 0x00FF00);
+			else if (v == '.') 
+				put_case_to_img(e, &p, 0xc8c8c8);
 			p.x++;
 		}
 		p.y++;
 	}
+	mlx_put_image_to_window(e->mlx, e->win, e->img, 0, 0);
+	sleep(1);
 	return (1);
 }
 
-int			put_map(t_game *g, t_env *e)
+int			init_img(t_env *e)
 {
 	int			ed;
 
+	ft_fprintf(e->game->fd, "init img\n");
 	mlx_clear_window(e->mlx, e->win);
 	if (e->img)
 		mlx_destroy_image(e->mlx, e->img);
 	if (!(e->img = mlx_new_image(e->mlx, W_WIDTH, W_HEIGHT)))
 		return (0);
-	data = mlx_get_data_addr(e->img, &(f->bpp), &(f->sizeline), &ed);
-	draw_map(g, e);
-	mlx_put_image_to_window(e->mlx, e->win, e->img, 0, 0);
+	e->data = mlx_get_data_addr(e->img, &(e->bpp), &(e->sizeline), &ed);
 	return (1);
 }

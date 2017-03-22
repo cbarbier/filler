@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/04 14:39:04 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/21 16:27:33 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/22 10:02:18 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ static int	put_piece(t_game *g)
 	return (1);
 }
 
-static int	filler_core(t_game *g)
+static int	filler_core(t_env *e, t_game *g)
 {
 	char		*line;
 
@@ -58,6 +58,7 @@ static int	filler_core(t_game *g)
 			get_map(g);
 		else if (!ft_strncmp(line, "Piece", 5))
 		{
+			init_img(e);
 			set_info(g);
 			ft_bzero(&(g->sol), sizeof(t_info));
 			get_pieces(g, line);
@@ -65,7 +66,9 @@ static int	filler_core(t_game *g)
 			put_piece(g);
 			free_piece(g);
 			g->loopcount++;
+			draw_map(e);
 		}
+		mlx_loop(e->mlx);
 		ft_strdel(&line);
 	}
 	return (1);
@@ -73,14 +76,19 @@ static int	filler_core(t_game *g)
 
 int			main(int argc, char **argv)
 {
+	t_env		e;
 	t_game		g;
 
 	if (!argv[argc - 1])
 		return (0);
 	if (!init_game(&g))
 		return (1);
+	if (!init_env(&e, &g))
+		return (1);
 	if (!parse_map(&g, set_start))
 		return (0);
-	filler_core(&g);
+	init_img(&e);
+	draw_map(&e);
+	filler_core(&e, &g);
 	return (0);
 }
