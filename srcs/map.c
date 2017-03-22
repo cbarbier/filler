@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/09 11:26:09 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/21 11:07:50 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/22 19:33:58 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ int			parse_map(t_game *g, int (*f)(t_game *, int, int))
 
 static int	is_target_reached(t_game *g)
 {
-	t_info *t;
-	t_info *m;
+	t_info	*t;
+	t_info	*m;
 	int		count;
 
 	t = &(g->advpos);

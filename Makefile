@@ -6,12 +6,13 @@
 #    By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/04 14:32:18 by cbarbier          #+#    #+#              #
-#    Updated: 2017/03/14 15:18:54 by cbarbier         ###   ########.fr        #
+#    Updated: 2017/03/22 19:52:28 by cbarbier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			= cbarbier.filler
 LIB				= libft/libft.a
+VISUAL			= visual/visual.out
 CC				= gcc
 CFLAGS			= -Wall -Wextra -Werror
 SRCS			= srcs/main.c \
@@ -28,23 +29,25 @@ display:
 	@echo "*******************"
 	@echo "***project filler**"
 	@echo "*******************\n"
-$(NAME): display $(LIB) $(SRCS)
+$(NAME): display $(LIB) $(SRCS) $(VISUAL)
 	@$(CC) $(CFLAGS) -o $(NAME) $(SRCS) -Llibft -lft $(MLX)
 	@echo "IA BUILT\t\t\033[0;32m✓\033[0m"
 
 $(LIB):
 	@make -C libft
 
+$(VISUAL):
+	@make -C visual
+
 clean:
 	@make -C libft clean
+	@make -C visual clean
 
 fclean: clean
 	@/bin/rm -rf $(NAME)
 	@make -C libft fclean
+	@make -C visual fclean
 
 re: fclean all
-
-test:
-	rm test.txt && touch test.txt && ./filler_vm -p2 ./cbarbier.filler -p1 players/carli.filler -f maps/map00
 
 .PHONY: clean fclean all re

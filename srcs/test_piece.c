@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/10 11:37:55 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/20 08:43:56 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/22 19:32:58 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,10 @@ static int		update_piece(t_game *g, int x, int y, int add)
 		j++;
 	}
 	return (1);
-} 
+}
 
-static int		set_deltas(t_game *g, t_info *tmp,  int i, int j) 
-{ 
+static int		set_deltas(t_game *g, t_info *tmp, int i, int j)
+{
 	t_info		*myinfo;
 
 	myinfo = &(g->myinfo);
@@ -49,10 +49,10 @@ static int		set_deltas(t_game *g, t_info *tmp,  int i, int j)
 	tmp->maxx = i > myinfo->maxx ? i : myinfo->maxx;
 	tmp->miny = j < myinfo->miny ? j : myinfo->miny;
 	tmp->maxy = j > myinfo->maxy ? j : myinfo->maxy;
-	return (1); 
+	return (1);
 }
 
-static int	 distance(t_info *a, t_info *b)
+static int		distance(t_info *a, t_info *b)
 {
 	return (abs(a->x - b->x) + abs(a->y - b->y));
 }
@@ -82,7 +82,7 @@ static int		sol_compare(t_game *g, t_info *tmpsol)
 	return (distance(&(g->sol), &(g->advpos)) - distance(tmpsol, &(g->advpos)));
 }
 
-int				test_piece(t_game *g,  int x, int y, int *count)
+int				test_piece(t_game *g, int x, int y, int *count)
 {
 	t_info		tmp;
 
