@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/04 14:39:04 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/22 11:57:52 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/22 17:51:42 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,18 +59,19 @@ static int	filler_core(void *p)
 	if (get_next_line(0, &line) <= 0)
 		return (0);
 	if (!ft_strncmp(line, "Plateau", 7))
-		get_map(g);
+		get_map(e, g);
 	else if (!ft_strncmp(line, "Piece", 5))
 	{
-		init_img(e);
 		set_info(g);
 		ft_bzero(&(g->sol), sizeof(t_info));
 		get_pieces(g, line);
 		compute_piece(g);
+		draw_last_piece(e);
 		put_piece(g);
 		free_piece(g);
 		g->loopcount++;
-		draw_map(e);
+		mlx_put_image_to_window(e->mlx, e->win, e->img, 150, 150);
+		usleep(50000);
 	}
 	ft_strdel(&line);
 	return (1);
@@ -83,14 +84,12 @@ int			main(int argc, char **argv)
 
 	if (!argv[argc - 1])
 		return (0);
-	if (!init_game(&g))
-		return (1);
 	if (!init_env(&e, &g))
 		return (1);
 	if (!parse_map(&g, set_start))
 		return (0);
-	init_img(&e);
-	draw_map(&e);
+	ft_fprintf(g.fd, "initialized\n");
+	mlx_put_image_to_window(e.mlx, e.win, e.img, 150, 150);
 	mlx_loop_hook(e.mlx, filler_core, (void *)&e);
 	mlx_loop(e.mlx);
 	return (0);

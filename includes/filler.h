@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 14:12:45 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/22 11:40:11 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/22 17:34:43 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,18 +82,22 @@ typedef struct	s_env
 	int		d;
 }				t_env;
 
-int			init_game(t_game *g);
+int			init_game(t_env *e, t_game *g);
 int			lets_play(t_game *g);
 int			get_pieces(t_game *g, char *line);
-int			get_map(t_game *g);
+int			get_map(t_env *e, t_game *g);
 int			compute_piece(t_game *g);
 int			test_piece(t_game *g,  int x, int y, int *count);
 int			set_info(t_game *g);
 int			put_map(t_game *g, char **m);
 int			parse_map(t_game *g, int (*f)(t_game *, int, int));
 void		put_pxl_img(t_env *e, int x, int y, unsigned int c);
-int			init_env(t_env *env, t_game *g);
+int			init_env(t_env *e, t_game *g);
 int			init_img(t_env *e);
-int			draw_map(t_env *e);
+int			draw_case(t_env *e, int i, int j, char v);
+int			set_deltas(t_info *info, int i, int j);
+int			set_env_delta(t_env *e);
+int			draw_last_piece(t_env *e);
+int			update_piece(t_game *g, int x, int y, int add);
 
 #endif

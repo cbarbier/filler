@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/10 11:37:55 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/21 17:05:02 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/22 17:34:27 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static void		print_info(t_game *g, t_info *i)
 	ft_fprintf(g->fd, "x %d - %d\ny %d - %d\nd x%d y%d\nc x%d y%d\n", i->minx, i->maxx, i->miny, i->maxy, i->dx, i->dy, i->cx, i->cy);
 }
 
-static int		update_piece(t_game *g, int x, int y, int add)
+int		update_piece(t_game *g, int x, int y, int add)
 {
 	int		i;
 	int		j;
@@ -40,18 +40,6 @@ static int		update_piece(t_game *g, int x, int y, int add)
 	return (1);
 } 
 
-static int		set_deltas(t_game *g, t_info *tmp,  int i, int j) 
-{ 
-	t_info		*myinfo;
-
-	myinfo = &(g->myinfo);
-	tmp->minx = i < myinfo->minx ? i : myinfo->minx;
-	tmp->maxx = i > myinfo->maxx ? i : myinfo->maxx;
-	tmp->miny = j < myinfo->miny ? j : myinfo->miny;
-	tmp->maxy = j > myinfo->maxy ? j : myinfo->maxy;
-	return (1); 
-}
-
 static int	 distance(t_info *a, t_info *b)
 {
 	return (abs(a->x - b->x) + abs(a->y - b->y));
@@ -71,7 +59,7 @@ static int		sol_compare(t_game *g, t_info *tmpsol)
 		while (i < p->dw)
 		{
 			if (g->testmap[tmpsol->y + j][tmpsol->x + i] == g->me)
-				set_deltas(g, tmpsol, tmpsol->x + i, tmpsol->y + j);
+				set_deltas(tmpsol, tmpsol->x + i, tmpsol->y + j);
 			i++;
 		}
 		j++;

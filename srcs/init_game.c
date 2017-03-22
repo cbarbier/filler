@@ -6,19 +6,19 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/08 13:43:00 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/22 08:54:28 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/22 15:52:46 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/filler.h"
 
-static int	init_map(t_game *g)
+static int	init_map(t_env *e, t_game *g)
 {
 	if (!(g->map = (char **)ft_memalloc(g->height * sizeof(char *))))
 		return (0);
 	if (!(g->testmap = (char **)ft_memalloc(g->height * sizeof(char *))))
 		return (0);
-	if (!get_map(g))
+	if (!get_map(e, g))
 		return (0);
 	g->mystart.x = g->myinfo.minx;
 	g->mystart.y = g->myinfo.maxy;
@@ -63,18 +63,21 @@ static int	init_infos(t_game *g, t_info *info)
 	return (1);
 }
 
-int			init_game(t_game *g)
+int			init_game(t_env *e, t_game *g)
 {
 	ft_bzero(g, sizeof(t_game));
+	e->game = g;
 	g->fd = open("test.txt", O_WRONLY | O_APPEND);
 	if (!get_player_id(g))
 		return (0);
 	if (!get_board_size(g))
 		return (0);
+	set_env_delta(e);
 	ft_fprintf(g->fd, "p%d h%d w%d\n", g->player, g->height, g->width);
-	if (!init_map(g))
+	if (!init_map(e, g))
 		return (0);
 	init_infos(g, &(g->myinfo));
 	init_infos(g, &(g->ainfo));
+	init_infos(g, &(g->advpos));
 	return (1);
 }
