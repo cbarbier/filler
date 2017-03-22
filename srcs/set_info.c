@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/14 09:04:03 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/21 12:10:52 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/22 19:31:05 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int					set_info_helper(t_game *g, int i, int j)
 	if (g->map[j][i] == g->adv)
 		set_deltas(&(g->ainfo), i, j);
 	else if (g->map[j][i] == g->me)
-		set_deltas(&(g->myinfo), i, j);	
+		set_deltas(&(g->myinfo), i, j);
 	return (1);
 }
 
