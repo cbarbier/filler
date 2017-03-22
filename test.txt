@@ -22,6 +22,121 @@ init img
 myinfo minx2 maxx2 miny8 maxy8 cx 2 cy 8
 ainfo minx14 maxx14 miny12 maxy12 cx 14 cy 12
 mystart 2 8   his start 14 12
+piece h1 w2
+piece line 0 **
+new piece h1 w2 dx0 dy0 dw2 dh1
+solution found 1 8
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 3
+y 8 - 8
+d x2 y1
+c x0 y0
+put 8 2
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OO.............
+line read :  9 .................
+line read : 10 .................
+line read : 11 .................
+line read : 12 ..............XX.
+line read : 13 ..............XX.
+line read : 14 .................
+init img
+myinfo minx2 maxx3 miny8 maxy8 cx 2 cy 8
+ainfo minx14 maxx15 miny12 maxy13 cx 14 cy 12
+mystart 2 8   his start 14 12
+piece h2 w3
+piece line 0 ...
+piece line 1 ***
+new piece h2 w3 dx0 dy1 dw3 dh1
+solution found 0 8
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 3
+y 8 - 8
+d x2 y1
+c x0 y0
+put 7 3
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOO...........
+line read :  9 .................
+line read : 10 .................
+line read : 11 .................
+line read : 12 ..............XX.
+line read : 13 .............XXX.
+line read : 14 .................
+init img
+myinfo minx2 maxx5 miny8 maxy8 cx 3 cy 8
+ainfo minx13 maxx15 miny12 maxy13 cx 14 cy 12
+mystart 2 8   his start 14 12
+piece h1 w3
+piece line 0 ***
+new piece h1 w3 dx0 dy0 dw3 dh1
+solution found 0 8
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 5 8
+add on map:
+remove from map:
+x 2 - 7
+y 8 - 8
+d x6 y1
+c x0 y0
+put 8 5
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOO.........
+line read :  9 .................
+line read : 10 .................
+line read : 11 .................
+line read : 12 ..............XXX
+line read : 13 .............XXX.
+line read : 14 .................
+init img
+myinfo minx2 maxx7 miny8 maxy8 cx 4 cy 8
+ainfo minx13 maxx16 miny12 maxy13 cx 14 cy 12
+mystart 2 8   his start 14 12
 piece h2 w1
 piece line 0 *
 piece line 1 *
@@ -33,12 +148,6242 @@ x 0 - 17
 y 0 - 15
 d x0 y0
 c x0 y0
+solution found 3 7
+add on map:
+remove from map:
+x 2 - 7
+y 8 - 8
+d x6 y1
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 7
+y 8 - 8
+d x6 y1
+c x0 y0
+solution found 5 7
+add on map:
+remove from map:
+x 2 - 7
+y 8 - 8
+d x6 y1
+c x0 y0
+solution found 6 7
+add on map:
+remove from map:
+x 2 - 7
+y 8 - 8
+d x6 y1
+c x0 y0
+solution found 7 7
+add on map:
+remove from map:
+x 2 - 7
+y 8 - 8
+d x6 y1
+c x0 y0
 solution found 2 8
 add on map:
 remove from map:
-x 2 - 2
+x 2 - 7
 y 8 - 9
-d x1 y2
+d x6 y2
 c x0 y0
-put 8 2
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 7
+y 8 - 9
+d x6 y2
+c x0 y0
+solution found 4 8
+add on map:
+remove from map:
+x 2 - 7
+y 8 - 9
+d x6 y2
+c x0 y0
+solution found 5 8
+add on map:
+remove from map:
+x 2 - 7
+y 8 - 9
+d x6 y2
+c x0 y0
+solution found 6 8
+add on map:
+remove from map:
+x 2 - 7
+y 8 - 9
+d x6 y2
+c x0 y0
+solution found 7 8
+add on map:
+remove from map:
+x 2 - 7
+y 8 - 9
+d x6 y2
+c x0 y0
+put 8 7
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOO.........
+line read :  9 .......O.........
+line read : 10 .................
+line read : 11 .................
+line read : 12 ..............XXX
+line read : 13 .............XXX.
+line read : 14 ...............XX
+init img
+myinfo minx2 maxx7 miny8 maxy9 cx 4 cy 8
+ainfo minx13 maxx16 miny12 maxy14 cx 14 cy 13
+mystart 2 8   his start 14 12
+piece h1 w2
+piece line 0 **
+new piece h1 w2 dx0 dy0 dw2 dh1
+solution found 1 8
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 7 8
+add on map:
+remove from map:
+x 2 - 8
+y 8 - 9
+d x7 y2
+c x0 y0
+solution found 6 9
+add on map:
+remove from map:
+x 2 - 7
+y 8 - 9
+d x6 y2
+c x0 y0
+solution found 7 9
+add on map:
+remove from map:
+x 2 - 8
+y 8 - 9
+d x7 y2
+c x0 y0
+put 9 7
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOO.........
+line read :  9 .......OO........
+line read : 10 .................
+line read : 11 .................
+line read : 12 ..............XXX
+line read : 13 .............XXXX
+line read : 14 ...............XX
+init img
+myinfo minx2 maxx8 miny8 maxy9 cx 5 cy 8
+ainfo minx13 maxx16 miny12 maxy14 cx 14 cy 13
+mystart 2 8   his start 14 12
+piece h2 w3
+piece line 0 ...
+piece line 1 ***
+new piece h2 w3 dx0 dy1 dw3 dh1
+solution found 0 8
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 7 8
+add on map:
+remove from map:
+x 2 - 8
+y 8 - 9
+d x7 y2
+c x0 y0
+solution found 5 9
+add on map:
+remove from map:
+x 2 - 8
+y 8 - 9
+d x7 y2
+c x0 y0
+solution found 8 9
+add on map:
+remove from map:
+x 2 - 8
+y 8 - 9
+d x7 y2
+c x0 y0
+put 8 8
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOO.........
+line read :  9 .......OOOO......
+line read : 10 .................
+line read : 11 .................
+line read : 12 ..............XXX
+line read : 13 .............XXXX
+line read : 14 .............XXXX
+init img
+myinfo minx2 maxx10 miny8 maxy9 cx 6 cy 8
+ainfo minx13 maxx16 miny12 maxy14 cx 14 cy 13
+mystart 2 8   his start 14 12
+piece h2 w1
+piece line 0 *
+piece line 1 *
+new piece h2 w1 dx0 dy0 dw1 dh2
+solution found 2 7
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 3 7
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 9
+d x9 y2
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 9
+d x9 y2
+c x0 y0
+solution found 5 7
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 9
+d x9 y2
+c x0 y0
+solution found 6 7
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 9
+d x9 y2
+c x0 y0
+solution found 7 7
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 9
+d x9 y2
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 9
+d x9 y2
+c x0 y0
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 9
+d x9 y2
+c x0 y0
+solution found 4 8
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 9
+d x9 y2
+c x0 y0
+solution found 5 8
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 9
+d x9 y2
+c x0 y0
+solution found 6 8
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 9
+d x9 y2
+c x0 y0
+solution found 8 8
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 9
+d x9 y2
+c x0 y0
+solution found 9 8
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 9
+d x9 y2
+c x0 y0
+solution found 10 8
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 9
+d x9 y2
+c x0 y0
+solution found 7 9
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 10
+d x9 y3
+c x0 y0
+solution found 8 9
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 10
+d x9 y3
+c x0 y0
+solution found 9 9
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 10
+d x9 y3
+c x0 y0
+solution found 10 9
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 10
+d x9 y3
+c x0 y0
+put 9 10
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOO.........
+line read :  9 .......OOOO......
+line read : 10 ..........O......
+line read : 11 .................
+line read : 12 .............XXXX
+line read : 13 .............XXXX
+line read : 14 .............XXXX
+init img
+myinfo minx2 maxx10 miny8 maxy10 cx 6 cy 9
+ainfo minx13 maxx16 miny12 maxy14 cx 14 cy 13
+mystart 2 8   his start 14 12
+piece h2 w2
+piece line 0 .*
+piece line 1 **
+new piece h2 w2 dx0 dy0 dw2 dh2
+solution found 1 7
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 7 7
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 10
+d x9 y3
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 10
+d x9 y3
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 10
+d x9 y3
+c x0 y0
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 10
+d x9 y3
+c x0 y0
+solution found 4 8
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 10
+d x9 y3
+c x0 y0
+solution found 5 8
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 10
+d x9 y3
+c x0 y0
+solution found 10 8
+add on map:
+remove from map:
+x 2 - 11
+y 8 - 10
+d x10 y3
+c x0 y0
+solution found 6 9
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 10
+d x9 y3
+c x0 y0
+solution found 7 9
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 10
+d x9 y3
+c x0 y0
+solution found 8 9
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 10
+d x9 y3
+c x0 y0
+solution found 10 9
+add on map:
+remove from map:
+x 2 - 11
+y 8 - 10
+d x10 y3
+c x0 y0
+solution found 9 10
+add on map:
+remove from map:
+x 2 - 10
+y 8 - 11
+d x9 y4
+c x0 y0
+put 9 10
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOO.........
+line read :  9 .......OOOOO.....
+line read : 10 ..........OO.....
+line read : 11 .................
+line read : 12 .............XXXX
+line read : 13 ...........XXXXXX
+line read : 14 ...........XXXXXX
+init img
+myinfo minx2 maxx11 miny8 maxy10 cx 6 cy 9
+ainfo minx11 maxx16 miny12 maxy14 cx 13 cy 13
+mystart 2 8   his start 14 12
+piece h2 w3
+piece line 0 .**
+piece line 1 ...
+new piece h2 w3 dx1 dy0 dw2 dh2
+solution found 1 8
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 7 8
+add on map:
+remove from map:
+x 2 - 11
+y 8 - 10
+d x10 y3
+c x0 y0
+solution found 6 9
+add on map:
+remove from map:
+x 2 - 11
+y 8 - 10
+d x10 y3
+c x0 y0
+solution found 11 9
+add on map:
+remove from map:
+x 2 - 11
+y 8 - 10
+d x10 y3
+c x0 y0
+solution found 9 10
+add on map:
+remove from map:
+x 2 - 11
+y 8 - 10
+d x10 y3
+c x0 y0
+solution found 11 10
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 10
+d x11 y3
+c x0 y0
+put 10 10
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOO.........
+line read :  9 .......OOOOO.....
+line read : 10 ..........OOO....
+line read : 11 .................
+line read : 12 ............XXXXX
+line read : 13 ...........XXXXXX
+line read : 14 ...........XXXXXX
+init img
+myinfo minx2 maxx12 miny8 maxy10 cx 7 cy 9
+ainfo minx11 maxx16 miny12 maxy14 cx 13 cy 13
+mystart 2 8   his start 14 12
+piece h2 w2
+piece line 0 *.
+piece line 1 *.
+new piece h2 w2 dx0 dy0 dw1 dh2
+solution found 2 7
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 3 7
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 10
+d x11 y3
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 10
+d x11 y3
+c x0 y0
+solution found 5 7
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 10
+d x11 y3
+c x0 y0
+solution found 6 7
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 10
+d x11 y3
+c x0 y0
+solution found 7 7
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 10
+d x11 y3
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 10
+d x11 y3
+c x0 y0
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 10
+d x11 y3
+c x0 y0
+solution found 4 8
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 10
+d x11 y3
+c x0 y0
+solution found 5 8
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 10
+d x11 y3
+c x0 y0
+solution found 6 8
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 10
+d x11 y3
+c x0 y0
+solution found 8 8
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 10
+d x11 y3
+c x0 y0
+solution found 9 8
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 10
+d x11 y3
+c x0 y0
+solution found 10 8
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 10
+d x11 y3
+c x0 y0
+solution found 11 8
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 10
+d x11 y3
+c x0 y0
+solution found 7 9
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 10
+d x11 y3
+c x0 y0
+solution found 8 9
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 10
+d x11 y3
+c x0 y0
+solution found 9 9
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 10
+d x11 y3
+c x0 y0
+solution found 12 9
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 10
+d x11 y3
+c x0 y0
+solution found 10 10
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 11
+d x11 y4
+c x0 y0
+solution found 11 10
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 11
+d x11 y4
+c x0 y0
+solution found 12 10
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 11
+d x11 y4
+c x0 y0
+put 10 12
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOO.........
+line read :  9 .......OOOOO.....
+line read : 10 ..........OOO....
+line read : 11 ............O....
+line read : 12 ...........XXXXXX
+line read : 13 ...........XXXXXX
+line read : 14 ...........XXXXXX
+init img
+myinfo minx2 maxx12 miny8 maxy11 cx 7 cy 9
+ainfo minx11 maxx16 miny12 maxy14 cx 13 cy 13
+mystart 2 8   his start 14 12
+piece h1 w2
+piece line 0 **
+new piece h1 w2 dx0 dy0 dw2 dh1
+solution found 1 8
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 7 8
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 11
+d x11 y4
+c x0 y0
+solution found 6 9
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 11
+d x11 y4
+c x0 y0
+solution found 11 9
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 11
+d x11 y4
+c x0 y0
+solution found 9 10
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 11
+d x11 y4
+c x0 y0
+solution found 12 10
+add on map:
+remove from map:
+x 2 - 13
+y 8 - 11
+d x12 y4
+c x0 y0
+solution found 11 11
+add on map:
+remove from map:
+x 2 - 12
+y 8 - 11
+d x11 y4
+c x0 y0
+solution found 12 11
+add on map:
+remove from map:
+x 2 - 13
+y 8 - 11
+d x12 y4
+c x0 y0
+put 11 12
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOO.........
+line read :  9 .......OOOOO.....
+line read : 10 ..........OOO....
+line read : 11 ............OO..X
+line read : 12 ...........XXXXXX
+line read : 13 ...........XXXXXX
+line read : 14 ...........XXXXXX
+init img
+myinfo minx2 maxx13 miny8 maxy11 cx 7 cy 9
+ainfo minx11 maxx16 miny11 maxy14 cx 13 cy 12
+mystart 2 8   his start 14 12
+piece h1 w3
+piece line 0 .**
+new piece h1 w3 dx1 dy0 dw2 dh1
+solution found 1 8
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 7 8
+add on map:
+remove from map:
+x 2 - 13
+y 8 - 11
+d x12 y4
+c x0 y0
+solution found 6 9
+add on map:
+remove from map:
+x 2 - 13
+y 8 - 11
+d x12 y4
+c x0 y0
+solution found 11 9
+add on map:
+remove from map:
+x 2 - 13
+y 8 - 11
+d x12 y4
+c x0 y0
+solution found 9 10
+add on map:
+remove from map:
+x 2 - 13
+y 8 - 11
+d x12 y4
+c x0 y0
+solution found 12 10
+add on map:
+remove from map:
+x 2 - 13
+y 8 - 11
+d x12 y4
+c x0 y0
+solution found 11 11
+add on map:
+remove from map:
+x 2 - 13
+y 8 - 11
+d x12 y4
+c x0 y0
+solution found 13 11
+add on map:
+remove from map:
+x 2 - 14
+y 8 - 11
+d x13 y4
+c x0 y0
+put 11 12
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOO.........
+line read :  9 .......OOOOO.....
+line read : 10 ..........OOO....
+line read : 11 ............OOO.X
+line read : 12 ...........XXXXXX
+line read : 13 ...........XXXXXX
+line read : 14 ..........XXXXXXX
+init img
+myinfo minx2 maxx14 miny8 maxy11 cx 8 cy 9
+ainfo minx10 maxx16 miny11 maxy14 cx 13 cy 12
+mystart 2 8   his start 14 12
+piece h2 w3
+piece line 0 ***
+piece line 1 .**
+new piece h2 w3 dx0 dy0 dw3 dh2
+solution found 0 7
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 6 7
+add on map:
+remove from map:
+x 2 - 14
+y 8 - 11
+d x13 y4
+c x0 y0
+solution found 0 8
+add on map:
+remove from map:
+x 2 - 14
+y 8 - 11
+d x13 y4
+c x0 y0
+solution found 10 8
+add on map:
+remove from map:
+x 2 - 14
+y 8 - 11
+d x13 y4
+c x0 y0
+solution found 5 9
+add on map:
+remove from map:
+x 2 - 14
+y 8 - 11
+d x13 y4
+c x0 y0
+solution found 8 10
+add on map:
+remove from map:
+x 2 - 14
+y 8 - 11
+d x13 y4
+c x0 y0
+solution found 13 10
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+put 10 13
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOO.........
+line read :  9 .......OOOOO.....
+line read : 10 ..........OOOOOOX
+line read : 11 ............OOOOX
+line read : 12 ...........XXXXXX
+line read : 13 ...........XXXXXX
+line read : 14 ..........XXXXXXX
+init img
+myinfo minx2 maxx15 miny8 maxy11 cx 8 cy 9
+ainfo minx10 maxx16 miny10 maxy14 cx 13 cy 12
+mystart 2 8   his start 14 12
+piece h1 w2
+piece line 0 **
+new piece h1 w2 dx0 dy0 dw2 dh1
+solution found 1 8
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 7 8
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 6 9
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 11 9
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 9 10
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 11 11
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+put 11 11
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOO.........
+line read :  9 .......OOOOO.....
+line read : 10 ..........OOOOOOX
+line read : 11 ...........OOOOOX
+line read : 12 ...........XXXXXX
+line read : 13 ...........XXXXXX
+line read : 14 .........XXXXXXXX
+init img
+myinfo minx2 maxx15 miny8 maxy11 cx 8 cy 9
+ainfo minx9 maxx16 miny10 maxy14 cx 12 cy 12
+mystart 2 8   his start 14 12
+piece h2 w2
+piece line 0 *.
+piece line 1 *.
+new piece h2 w2 dx0 dy0 dw1 dh2
+solution found 2 7
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 3 7
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 5 7
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 6 7
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 7 7
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 4 8
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 5 8
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 6 8
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 8 8
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 9 8
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 10 8
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 11 8
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 7 9
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 8 9
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 9 9
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 12 9
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 13 9
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 14 9
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 15 9
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 10 10
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+put 9 14
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOO.........
+line read :  9 .......OOOOO..O..
+line read : 10 ..........OOOOOOX
+line read : 11 .........XXOOOOOX
+line read : 12 ..........XXXXXXX
+line read : 13 ...........XXXXXX
+line read : 14 .........XXXXXXXX
+init img
+myinfo minx2 maxx15 miny8 maxy11 cx 8 cy 9
+ainfo minx9 maxx16 miny10 maxy14 cx 12 cy 12
+mystart 2 8   his start 14 12
+piece h1 w3
+piece line 0 ***
+new piece h1 w3 dx0 dy0 dw3 dh1
+solution found 0 8
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 7 8
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 5 9
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 11 9
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 12 9
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 13 9
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+solution found 14 9
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+solution found 8 10
+add on map:
+remove from map:
+x 2 - 15
+y 8 - 11
+d x14 y4
+c x0 y0
+put 9 14
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOO.........
+line read :  9 .......OOOOO..OOO
+line read : 10 ..........OOOOOOX
+line read : 11 .........XXOOOOOX
+line read : 12 .........XXXXXXXX
+line read : 13 .........XXXXXXXX
+line read : 14 .........XXXXXXXX
+init img
+myinfo minx2 maxx16 miny8 maxy11 cx 9 cy 9
+ainfo minx9 maxx16 miny10 maxy14 cx 12 cy 12
+mystart 2 8   his start 14 12
+piece h2 w3
+piece line 0 **.
+piece line 1 ...
+new piece h2 w3 dx0 dy0 dw2 dh2
+solution found 1 8
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 7 8
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+solution found 6 9
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+solution found 11 9
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+solution found 13 9
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+solution found 9 10
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+put 9 13
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOO.........
+line read :  9 .......OOOOO.OOOO
+line read : 10 ..........OOOOOOX
+line read : 11 ........XXXOOOOOX
+line read : 12 .........XXXXXXXX
+line read : 13 .........XXXXXXXX
+line read : 14 .........XXXXXXXX
+init img
+myinfo minx2 maxx16 miny8 maxy11 cx 9 cy 9
+ainfo minx8 maxx16 miny10 maxy14 cx 12 cy 12
+mystart 2 8   his start 14 12
+piece h1 w3
+piece line 0 .**
+new piece h1 w3 dx1 dy0 dw2 dh1
+solution found 1 8
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 7 8
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+solution found 6 9
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+solution found 11 9
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+solution found 12 9
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+solution found 9 10
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+put 9 11
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOO.........
+line read :  9 .......OOOOOOOOOO
+line read : 10 ..........OOOOOOX
+line read : 11 ......XXXXXOOOOOX
+line read : 12 .......XXXXXXXXXX
+line read : 13 .........XXXXXXXX
+line read : 14 .........XXXXXXXX
+init img
+myinfo minx2 maxx16 miny8 maxy11 cx 9 cy 9
+ainfo minx6 maxx16 miny10 maxy14 cx 11 cy 12
+mystart 2 8   his start 14 12
+piece h2 w2
+piece line 0 **
+piece line 1 ..
+new piece h2 w2 dx0 dy0 dw2 dh2
+solution found 1 8
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 7 8
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+solution found 6 9
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+solution found 9 10
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+put 10 9
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOO.........
+line read :  9 .......OOOOOOOOOO
+line read : 10 .........OOOOOOOX
+line read : 11 ......XXXXXOOOOOX
+line read : 12 ......XXXXXXXXXXX
+line read : 13 ......XX.XXXXXXXX
+line read : 14 .........XXXXXXXX
+init img
+myinfo minx2 maxx16 miny8 maxy11 cx 9 cy 9
+ainfo minx6 maxx16 miny10 maxy14 cx 11 cy 12
+mystart 2 8   his start 14 12
+piece h1 w3
+piece line 0 .**
+new piece h1 w3 dx1 dy0 dw2 dh1
+solution found 1 8
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 7 8
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+solution found 6 9
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+solution found 8 10
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+put 10 7
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOO.........
+line read :  9 .......OOOOOOOOOO
+line read : 10 ........OOOOOOOOX
+line read : 11 ......XXXXXOOOOOX
+line read : 12 ......XXXXXXXXXXX
+line read : 13 ......XX.XXXXXXXX
+line read : 14 ........XXXXXXXXX
+init img
+myinfo minx2 maxx16 miny8 maxy11 cx 9 cy 9
+ainfo minx6 maxx16 miny10 maxy14 cx 11 cy 12
+mystart 2 8   his start 14 12
+piece h1 w3
+piece line 0 ***
+new piece h1 w3 dx0 dy0 dw3 dh1
+solution found 0 8
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 7 8
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+solution found 5 9
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+solution found 6 10
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+put 10 6
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOO.........
+line read :  9 .......OOOOOOOOOO
+line read : 10 ......OOOOOOOOOOX
+line read : 11 ......XXXXXOOOOOX
+line read : 12 ......XXXXXXXXXXX
+line read : 13 ......XXXXXXXXXXX
+line read : 14 ........XXXXXXXXX
+init img
+myinfo minx2 maxx16 miny8 maxy11 cx 9 cy 9
+ainfo minx6 maxx16 miny10 maxy14 cx 11 cy 12
+mystart 2 8   his start 14 12
+piece h2 w3
+piece line 0 ***
+piece line 1 ...
+new piece h2 w3 dx0 dy0 dw3 dh2
+solution found 0 8
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 7 8
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+solution found 5 9
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+solution found 4 10
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+put 8 7
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 .................
+line read :  8 ..OOOOOOOO.......
+line read :  9 .......OOOOOOOOOO
+line read : 10 ......OOOOOOOOOOX
+line read : 11 ......XXXXXOOOOOX
+line read : 12 ......XXXXXXXXXXX
+line read : 13 ......XXXXXXXXXXX
+line read : 14 .......XXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny8 maxy11 cx 9 cy 9
+ainfo minx6 maxx16 miny10 maxy14 cx 11 cy 12
+mystart 2 8   his start 14 12
+piece h2 w3
+piece line 0 .**
+piece line 1 ***
+new piece h2 w3 dx0 dy0 dw3 dh2
+solution found 0 7
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 9 7
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+solution found 0 8
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+solution found 4 9
+add on map:
+remove from map:
+x 2 - 16
+y 8 - 11
+d x15 y4
+c x0 y0
+put 7 9
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 ..........OO.....
+line read :  8 ..OOOOOOOOOO.....
+line read :  9 .......OOOOOOOOOO
+line read : 10 ......OOOOOOOOOOX
+line read : 11 ......XXXXXOOOOOX
+line read : 12 ......XXXXXXXXXXX
+line read : 13 ......XXXXXXXXXXX
+line read : 14 ......XXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny7 maxy11 cx 9 cy 9
+ainfo minx6 maxx16 miny10 maxy14 cx 11 cy 12
+mystart 2 8   his start 14 12
+piece h5 w1
+piece line 0 .
+piece line 1 .
+piece line 2 .
+piece line 3 *
+piece line 4 *
+new piece h5 w1 dx0 dy3 dw1 dh2
+solution found 10 6
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 11 6
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 2 7
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 3 7
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 5 7
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 6 7
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 7 7
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 8 7
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 9 7
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 4 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 5 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 6 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 12 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 13 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 14 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 15 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 16 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 6 9
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+put 5 14
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 ..........OO.....
+line read :  8 ..OOOOOOOOOO..O..
+line read :  9 .......OOOOOOOOOO
+line read : 10 ......OOOOOOOOOOX
+line read : 11 ......XXXXXOOOOOX
+line read : 12 ......XXXXXXXXXXX
+line read : 13 ....XXXXXXXXXXXXX
+line read : 14 ......XXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny7 maxy11 cx 9 cy 9
+ainfo minx4 maxx16 miny10 maxy14 cx 10 cy 12
+mystart 2 8   his start 14 12
+piece h1 w2
+piece line 0 **
+new piece h1 w2 dx0 dy0 dw2 dh1
+solution found 9 7
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 11 7
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 11 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 13 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 14 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 6 9
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 5 10
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+put 8 14
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 ..........OO.....
+line read :  8 ..OOOOOOOOOO..OO.
+line read :  9 .......OOOOOOOOOO
+line read : 10 ......OOOOOOOOOOX
+line read : 11 .....XXXXXXOOOOOX
+line read : 12 ......XXXXXXXXXXX
+line read : 13 ....XXXXXXXXXXXXX
+line read : 14 ......XXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny7 maxy11 cx 9 cy 9
+ainfo minx4 maxx16 miny10 maxy14 cx 10 cy 12
+mystart 2 8   his start 14 12
+piece h2 w2
+piece line 0 **
+piece line 1 **
+new piece h2 w2 dx0 dy0 dw2 dh2
+solution found 9 6
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 11 6
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 1 7
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 13 7
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 15 7
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 5 9
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+put 7 13
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 ..........OO.OO..
+line read :  8 ..OOOOOOOOOO.OOO.
+line read :  9 .......OOOOOOOOOO
+line read : 10 ......OOOOOOOOOOX
+line read : 11 .....XXXXXXOOOOOX
+line read : 12 ......XXXXXXXXXXX
+line read : 13 ....XXXXXXXXXXXXX
+line read : 14 .....XXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny7 maxy11 cx 9 cy 9
+ainfo minx4 maxx16 miny10 maxy14 cx 10 cy 12
+mystart 2 8   his start 14 12
+piece h1 w2
+piece line 0 **
+new piece h1 w2 dx0 dy0 dw2 dh1
+solution found 9 7
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 11 7
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 12 7
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 14 7
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 11 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 12 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 15 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 6 9
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 5 10
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+put 7 14
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 ..........OO.OOO.
+line read :  8 ..OOOOOOOOOO.OOO.
+line read :  9 .......OOOOOOOOOO
+line read : 10 ......OOOOOOOOOOX
+line read : 11 .....XXXXXXOOOOOX
+line read : 12 ....XXXXXXXXXXXXX
+line read : 13 ....XXXXXXXXXXXXX
+line read : 14 .....XXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny7 maxy11 cx 9 cy 9
+ainfo minx4 maxx16 miny10 maxy14 cx 10 cy 12
+mystart 2 8   his start 14 12
+piece h2 w2
+piece line 0 ..
+piece line 1 **
+new piece h2 w2 dx0 dy1 dw2 dh1
+solution found 9 7
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 11 7
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 12 7
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 15 7
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 11 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 12 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 15 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 6 9
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 5 10
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+put 7 15
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 .................
+line read :  7 ..........OO.OOO.
+line read :  8 ..OOOOOOOOOO.OOOO
+line read :  9 .......OOOOOOOOOO
+line read : 10 ......OOOOOOOOOOX
+line read : 11 .....XXXXXXOOOOOX
+line read : 12 ....XXXXXXXXXXXXX
+line read : 13 ...XXXXXXXXXXXXXX
+line read : 14 ..XXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny7 maxy11 cx 9 cy 9
+ainfo minx2 maxx16 miny10 maxy14 cx 9 cy 12
+mystart 2 8   his start 14 12
+piece h2 w3
+piece line 0 ***
+piece line 1 .**
+new piece h2 w3 dx0 dy0 dw3 dh2
+solution found 8 6
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 10 6
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 11 6
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 14 6
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 0 7
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 0 8
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+solution found 4 9
+add on map:
+remove from map:
+x 2 - 16
+y 7 - 11
+d x15 y5
+c x0 y0
+put 6 14
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .................
+line read :  6 ..............OOO
+line read :  7 ..........OO.OOOO
+line read :  8 ..OOOOOOOOOO.OOOO
+line read :  9 .......OOOOOOOOOO
+line read : 10 ......OOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ....XXXXXXXXXXXXX
+line read : 13 ...XXXXXXXXXXXXXX
+line read : 14 ..XXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny6 maxy11 cx 9 cy 8
+ainfo minx2 maxx16 miny10 maxy14 cx 9 cy 12
+mystart 2 8   his start 14 12
+piece h2 w2
+piece line 0 .*
+piece line 1 **
+new piece h2 w2 dx0 dy0 dw2 dh2
+solution found 13 5
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 9 6
+add on map:
+remove from map:
+x 2 - 16
+y 6 - 11
+d x15 y6
+c x0 y0
+solution found 11 6
+add on map:
+remove from map:
+x 2 - 16
+y 6 - 11
+d x15 y6
+c x0 y0
+solution found 12 6
+add on map:
+remove from map:
+x 2 - 16
+y 6 - 11
+d x15 y6
+c x0 y0
+solution found 1 7
+add on map:
+remove from map:
+x 2 - 16
+y 6 - 11
+d x15 y6
+c x0 y0
+solution found 11 7
+add on map:
+remove from map:
+x 2 - 16
+y 6 - 11
+d x15 y6
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 6 - 11
+d x15 y6
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 16
+y 6 - 11
+d x15 y6
+c x0 y0
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 16
+y 6 - 11
+d x15 y6
+c x0 y0
+solution found 4 8
+add on map:
+remove from map:
+x 2 - 16
+y 6 - 11
+d x15 y6
+c x0 y0
+solution found 5 8
+add on map:
+remove from map:
+x 2 - 16
+y 6 - 11
+d x15 y6
+c x0 y0
+solution found 5 9
+add on map:
+remove from map:
+x 2 - 16
+y 6 - 11
+d x15 y6
+c x0 y0
+put 5 13
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 ..............O..
+line read :  6 .............OOOO
+line read :  7 ..........OO.OOOO
+line read :  8 ..OOOOOOOOOO.OOOO
+line read :  9 .......OOOOOOOOOO
+line read : 10 ......OOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ....XXXXXXXXXXXXX
+line read : 13 ...XXXXXXXXXXXXXX
+line read : 14 .XXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny5 maxy11 cx 9 cy 8
+ainfo minx1 maxx16 miny10 maxy14 cx 8 cy 12
+mystart 2 8   his start 14 12
+piece h2 w2
+piece line 0 *.
+piece line 1 *.
+new piece h2 w2 dx0 dy0 dw1 dh2
+solution found 14 4
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 13 5
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 15 5
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 16 5
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 10 6
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 11 6
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 2 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 3 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 5 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 6 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 7 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 8 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 9 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 4 8
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 5 8
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 6 8
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 12 8
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 6 9
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+put 8 12
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 ..............O..
+line read :  6 .............OOOO
+line read :  7 ..........OO.OOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 .......OOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ....XXXXXXXXXXXXX
+line read : 13 ...XXXXXXXXXXXXXX
+line read : 14 .XXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny5 maxy11 cx 9 cy 8
+ainfo minx1 maxx16 miny10 maxy14 cx 8 cy 12
+mystart 2 8   his start 14 12
+piece h2 w2
+piece line 0 **
+piece line 1 ..
+new piece h2 w2 dx0 dy0 dw2 dh2
+solution found 13 5
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 14 5
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 12 6
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 9 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 11 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 12 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 6 9
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+put 5 14
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 ..............OO.
+line read :  6 .............OOOO
+line read :  7 ..........OO.OOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 .......OOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 ..XXXXXXXXXXXXXXX
+line read : 14 .XXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny5 maxy11 cx 9 cy 8
+ainfo minx1 maxx16 miny10 maxy14 cx 8 cy 12
+mystart 2 8   his start 14 12
+piece h2 w3
+piece line 0 **.
+piece line 1 ...
+new piece h2 w3 dx0 dy0 dw2 dh2
+solution found 13 5
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 15 5
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 12 6
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 9 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 11 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 12 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 6 9
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+put 7 12
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 ..............OO.
+line read :  6 .............OOOO
+line read :  7 ..........OOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 .....X.OOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 ..XXXXXXXXXXXXXXX
+line read : 14 .XXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny5 maxy11 cx 9 cy 8
+ainfo minx1 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w2
+piece line 0 **
+piece line 1 ..
+new piece h2 w2 dx0 dy0 dw2 dh2
+solution found 13 5
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 15 5
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 12 6
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 9 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 6 9
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+put 5 13
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .............OOO.
+line read :  6 .............OOOO
+line read :  7 ..........OOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 .....X.OOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 ..XXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny5 maxy11 cx 9 cy 8
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h1 w3
+piece line 0 ***
+new piece h1 w3 dx0 dy0 dw3 dh1
+solution found 11 5
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 11 6
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 8 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 0 8
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+put 6 11
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 .................
+line read :  5 .............OOO.
+line read :  6 ...........OOOOOO
+line read :  7 ..........OOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 .....XXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 ..XXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny5 maxy11 cx 9 cy 8
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w1
+piece line 0 *
+piece line 1 *
+new piece h2 w1 dx0 dy0 dw1 dh2
+solution found 13 4
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 14 4
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 15 4
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 11 5
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 12 5
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 16 5
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 10 6
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 2 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 3 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 5 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 6 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 7 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 8 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 9 7
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+solution found 4 8
+add on map:
+remove from map:
+x 2 - 16
+y 5 - 11
+d x15 y7
+c x0 y0
+put 4 14
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .................
+line read :  4 ..............O..
+line read :  5 .............OOO.
+line read :  6 ...........OOOOOO
+line read :  7 ..........OOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 .....XXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny4 maxy11 cx 9 cy 7
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w1
+piece line 0 *
+piece line 1 *
+new piece h2 w1 dx0 dy0 dw1 dh2
+solution found 14 3
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 13 4
+add on map:
+remove from map:
+x 2 - 16
+y 4 - 11
+d x15 y8
+c x0 y0
+solution found 15 4
+add on map:
+remove from map:
+x 2 - 16
+y 4 - 11
+d x15 y8
+c x0 y0
+solution found 11 5
+add on map:
+remove from map:
+x 2 - 16
+y 4 - 11
+d x15 y8
+c x0 y0
+solution found 12 5
+add on map:
+remove from map:
+x 2 - 16
+y 4 - 11
+d x15 y8
+c x0 y0
+solution found 16 5
+add on map:
+remove from map:
+x 2 - 16
+y 4 - 11
+d x15 y8
+c x0 y0
+solution found 10 6
+add on map:
+remove from map:
+x 2 - 16
+y 4 - 11
+d x15 y8
+c x0 y0
+solution found 2 7
+add on map:
+remove from map:
+x 2 - 16
+y 4 - 11
+d x15 y8
+c x0 y0
+solution found 3 7
+add on map:
+remove from map:
+x 2 - 16
+y 4 - 11
+d x15 y8
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 16
+y 4 - 11
+d x15 y8
+c x0 y0
+solution found 5 7
+add on map:
+remove from map:
+x 2 - 16
+y 4 - 11
+d x15 y8
+c x0 y0
+solution found 6 7
+add on map:
+remove from map:
+x 2 - 16
+y 4 - 11
+d x15 y8
+c x0 y0
+solution found 7 7
+add on map:
+remove from map:
+x 2 - 16
+y 4 - 11
+d x15 y8
+c x0 y0
+solution found 8 7
+add on map:
+remove from map:
+x 2 - 16
+y 4 - 11
+d x15 y8
+c x0 y0
+solution found 9 7
+add on map:
+remove from map:
+x 2 - 16
+y 4 - 11
+d x15 y8
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 16
+y 4 - 11
+d x15 y8
+c x0 y0
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 16
+y 4 - 11
+d x15 y8
+c x0 y0
+solution found 4 8
+add on map:
+remove from map:
+x 2 - 16
+y 4 - 11
+d x15 y8
+c x0 y0
+put 3 14
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 ..............O..
+line read :  4 ..............O..
+line read :  5 .............OOO.
+line read :  6 ...........OOOOOO
+line read :  7 ..........OOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny3 maxy11 cx 9 cy 7
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h1 w3
+piece line 0 ***
+new piece h1 w3 dx0 dy0 dw3 dh1
+solution found 12 3
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 13 3
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 14 3
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 12 4
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 13 4
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 14 4
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 11 5
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 9 6
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 8 7
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 0 8
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+put 4 14
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 ..............O..
+line read :  4 ..............OOO
+line read :  5 .............OOO.
+line read :  6 ...........OOOOOO
+line read :  7 ..........OOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny3 maxy11 cx 9 cy 7
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w3
+piece line 0 ...
+piece line 1 ***
+new piece h2 w3 dx0 dy1 dw3 dh1
+solution found 12 3
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 13 3
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 14 3
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 12 4
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 11 5
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 9 6
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 8 7
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 0 8
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+put 2 14
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 ..............OOO
+line read :  4 ..............OOO
+line read :  5 .............OOO.
+line read :  6 ...........OOOOOO
+line read :  7 ..........OOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny3 maxy11 cx 9 cy 7
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w2
+piece line 0 **
+piece line 1 ..
+new piece h2 w2 dx0 dy0 dw2 dh2
+solution found 13 3
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 13 4
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 12 5
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 15 5
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 10 6
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 9 7
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+put 5 15
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 ..............OOO
+line read :  4 ..............OOO
+line read :  5 .............OOOO
+line read :  6 ...........OOOOOO
+line read :  7 ..........OOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny3 maxy11 cx 9 cy 7
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w2
+piece line 0 **
+piece line 1 **
+new piece h2 w2 dx0 dy0 dw2 dh2
+solution found 13 2
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 12 4
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 10 5
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 9 6
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 1 7
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+put 4 12
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 ..............OOO
+line read :  4 ............OOOOO
+line read :  5 ............OOOOO
+line read :  6 ...........OOOOOO
+line read :  7 ..........OOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny3 maxy11 cx 9 cy 7
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h1 w2
+piece line 0 **
+new piece h1 w2 dx0 dy0 dw2 dh1
+solution found 13 3
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 11 4
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 11 5
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 10 6
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 9 7
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+put 3 13
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .............OOOO
+line read :  4 ............OOOOO
+line read :  5 ............OOOOO
+line read :  6 ...........OOOOOO
+line read :  7 ..........OOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny3 maxy11 cx 9 cy 7
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w3
+piece line 0 .**
+piece line 1 ***
+new piece h2 w3 dx0 dy0 dw3 dh2
+solution found 11 2
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 10 3
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 9 5
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 8 6
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 0 7
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 0 8
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+put 5 9
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .............OOOO
+line read :  4 ............OOOOO
+line read :  5 ..........OOOOOOO
+line read :  6 .........OOOOOOOO
+line read :  7 ..........OOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny3 maxy11 cx 9 cy 7
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h1 w2
+piece line 0 **
+new piece h1 w2 dx0 dy0 dw2 dh1
+solution found 12 3
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 11 4
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 9 5
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 8 6
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 9 7
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+put 7 9
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 .............OOOO
+line read :  4 ............OOOOO
+line read :  5 ..........OOOOOOO
+line read :  6 .........OOOOOOOO
+line read :  7 .........OOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny3 maxy11 cx 9 cy 7
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h1 w2
+piece line 0 **
+new piece h1 w2 dx0 dy0 dw2 dh1
+solution found 12 3
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 11 4
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 9 5
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 8 6
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 8 7
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+put 3 12
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 .................
+line read :  3 ............OOOOO
+line read :  4 ............OOOOO
+line read :  5 ..........OOOOOOO
+line read :  6 .........OOOOOOOO
+line read :  7 .........OOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny3 maxy11 cx 9 cy 7
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w3
+piece line 0 ***
+piece line 1 .*.
+new piece h2 w3 dx0 dy0 dw3 dh2
+solution found 11 2
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 12 2
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 13 2
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 14 2
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 10 3
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 9 4
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 7 6
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 1 7
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 2 7
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 3 7
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 5 7
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 6 7
+add on map:
+remove from map:
+x 2 - 16
+y 3 - 11
+d x15 y9
+c x0 y0
+solution found 0 8
+add on map:
+remove from map:
+x 1 - 16
+y 3 - 11
+d x16 y9
+c x0 y0
+put 2 14
+draw map
+line read :  0 .................
+line read :  1 .................
+line read :  2 ..............OOO
+line read :  3 ............OOOOO
+line read :  4 ............OOOOO
+line read :  5 ..........OOOOOOO
+line read :  6 .........OOOOOOOO
+line read :  7 .........OOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny2 maxy11 cx 9 cy 6
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w3
+piece line 0 *..
+piece line 1 *..
+new piece h2 w3 dx0 dy0 dw1 dh2
+solution found 14 1
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 15 1
+add on map:
+remove from map:
+x 2 - 16
+y 2 - 11
+d x15 y10
+c x0 y0
+solution found 16 1
+add on map:
+remove from map:
+x 2 - 16
+y 2 - 11
+d x15 y10
+c x0 y0
+solution found 12 2
+add on map:
+remove from map:
+x 2 - 16
+y 2 - 11
+d x15 y10
+c x0 y0
+solution found 13 2
+add on map:
+remove from map:
+x 2 - 16
+y 2 - 11
+d x15 y10
+c x0 y0
+solution found 10 4
+add on map:
+remove from map:
+x 2 - 16
+y 2 - 11
+d x15 y10
+c x0 y0
+solution found 11 4
+add on map:
+remove from map:
+x 2 - 16
+y 2 - 11
+d x15 y10
+c x0 y0
+solution found 9 5
+add on map:
+remove from map:
+x 2 - 16
+y 2 - 11
+d x15 y10
+c x0 y0
+solution found 2 7
+add on map:
+remove from map:
+x 2 - 16
+y 2 - 11
+d x15 y10
+c x0 y0
+solution found 3 7
+add on map:
+remove from map:
+x 2 - 16
+y 2 - 11
+d x15 y10
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 16
+y 2 - 11
+d x15 y10
+c x0 y0
+solution found 5 7
+add on map:
+remove from map:
+x 2 - 16
+y 2 - 11
+d x15 y10
+c x0 y0
+solution found 6 7
+add on map:
+remove from map:
+x 2 - 16
+y 2 - 11
+d x15 y10
+c x0 y0
+solution found 7 7
+add on map:
+remove from map:
+x 2 - 16
+y 2 - 11
+d x15 y10
+c x0 y0
+solution found 8 7
+add on map:
+remove from map:
+x 2 - 16
+y 2 - 11
+d x15 y10
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 16
+y 2 - 11
+d x15 y10
+c x0 y0
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 16
+y 2 - 11
+d x15 y10
+c x0 y0
+put 1 14
+draw map
+line read :  0 .................
+line read :  1 ..............O..
+line read :  2 ..............OOO
+line read :  3 ............OOOOO
+line read :  4 ............OOOOO
+line read :  5 ..........OOOOOOO
+line read :  6 .........OOOOOOOO
+line read :  7 .........OOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny1 maxy11 cx 9 cy 6
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w3
+piece line 0 ***
+piece line 1 ...
+new piece h2 w3 dx0 dy0 dw3 dh2
+solution found 12 1
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 13 1
+add on map:
+remove from map:
+x 2 - 16
+y 1 - 11
+d x15 y11
+c x0 y0
+solution found 14 1
+add on map:
+remove from map:
+x 2 - 16
+y 1 - 11
+d x15 y11
+c x0 y0
+solution found 12 2
+add on map:
+remove from map:
+x 2 - 16
+y 1 - 11
+d x15 y11
+c x0 y0
+solution found 10 3
+add on map:
+remove from map:
+x 2 - 16
+y 1 - 11
+d x15 y11
+c x0 y0
+solution found 10 4
+add on map:
+remove from map:
+x 2 - 16
+y 1 - 11
+d x15 y11
+c x0 y0
+solution found 8 5
+add on map:
+remove from map:
+x 2 - 16
+y 1 - 11
+d x15 y11
+c x0 y0
+solution found 7 6
+add on map:
+remove from map:
+x 2 - 16
+y 1 - 11
+d x15 y11
+c x0 y0
+solution found 7 7
+add on map:
+remove from map:
+x 2 - 16
+y 1 - 11
+d x15 y11
+c x0 y0
+solution found 0 8
+add on map:
+remove from map:
+x 2 - 16
+y 1 - 11
+d x15 y11
+c x0 y0
+put 1 14
+draw map
+line read :  0 .................
+line read :  1 ..............OOO
+line read :  2 ..............OOO
+line read :  3 ............OOOOO
+line read :  4 ............OOOOO
+line read :  5 ..........OOOOOOO
+line read :  6 .........OOOOOOOO
+line read :  7 .........OOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny1 maxy11 cx 9 cy 6
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w2
+piece line 0 **
+piece line 1 **
+new piece h2 w2 dx0 dy0 dw2 dh2
+solution found 13 0
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 11 2
+add on map:
+remove from map:
+x 2 - 16
+y 1 - 11
+d x15 y11
+c x0 y0
+solution found 9 4
+add on map:
+remove from map:
+x 2 - 16
+y 1 - 11
+d x15 y11
+c x0 y0
+solution found 8 5
+add on map:
+remove from map:
+x 2 - 16
+y 1 - 11
+d x15 y11
+c x0 y0
+solution found 1 7
+add on map:
+remove from map:
+x 2 - 16
+y 1 - 11
+d x15 y11
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 1 - 11
+d x15 y11
+c x0 y0
+put 0 13
+draw map
+line read :  0 .............OO..
+line read :  1 .............OOOO
+line read :  2 ..............OOO
+line read :  3 ............OOOOO
+line read :  4 ............OOOOO
+line read :  5 ..........OOOOOOO
+line read :  6 .........OOOOOOOO
+line read :  7 .........OOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w1
+piece line 0 *
+piece line 1 *
+new piece h2 w1 dx0 dy0 dw1 dh2
+solution found 15 0
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 16 0
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 13 1
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 12 2
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 13 2
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 10 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 11 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 9 5
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 2 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 3 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 5 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 6 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 2 13
+draw map
+line read :  0 .............OO..
+line read :  1 .............OOOO
+line read :  2 .............OOOO
+line read :  3 ............OOOOO
+line read :  4 ............OOOOO
+line read :  5 ..........OOOOOOO
+line read :  6 .........OOOOOOOO
+line read :  7 .........OOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w1
+piece line 0 *
+piece line 1 *
+new piece h2 w1 dx0 dy0 dw1 dh2
+solution found 15 0
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 16 0
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 12 2
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 10 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 11 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 9 5
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 2 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 3 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 5 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 6 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 4 11
+draw map
+line read :  0 .............OO..
+line read :  1 .............OOOO
+line read :  2 .............OOOO
+line read :  3 ............OOOOO
+line read :  4 ...........OOOOOO
+line read :  5 ..........OOOOOOO
+line read :  6 .........OOOOOOOO
+line read :  7 .........OOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w1
+piece line 0 *
+piece line 1 *
+new piece h2 w1 dx0 dy0 dw1 dh2
+solution found 15 0
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 16 0
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 12 2
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 11 3
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 10 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 9 5
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 2 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 3 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 5 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 6 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 7 8
+draw map
+line read :  0 .............OO..
+line read :  1 .............OOOO
+line read :  2 .............OOOO
+line read :  3 ............OOOOO
+line read :  4 ...........OOOOOO
+line read :  5 ..........OOOOOOO
+line read :  6 .........OOOOOOOO
+line read :  7 ........OOOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w3
+piece line 0 ..*
+piece line 1 ..*
+new piece h2 w3 dx2 dy0 dw1 dh2
+solution found 15 0
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 16 0
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 12 2
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 11 3
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 10 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 9 5
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 6
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 2 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 3 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 5 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 6 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 2 10
+draw map
+line read :  0 .............OO..
+line read :  1 .............OOOO
+line read :  2 ............OOOOO
+line read :  3 ............OOOOO
+line read :  4 ...........OOOOOO
+line read :  5 ..........OOOOOOO
+line read :  6 .........OOOOOOOO
+line read :  7 ........OOOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w1
+piece line 0 *
+piece line 1 *
+new piece h2 w1 dx0 dy0 dw1 dh2
+solution found 15 0
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 16 0
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 12 1
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 11 3
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 10 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 9 5
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 6
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 2 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 3 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 5 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 6 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 3 11
+draw map
+line read :  0 .............OO..
+line read :  1 .............OOOO
+line read :  2 ............OOOOO
+line read :  3 ...........OOOOOO
+line read :  4 ...........OOOOOO
+line read :  5 ..........OOOOOOO
+line read :  6 .........OOOOOOOO
+line read :  7 ........OOOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h1 w2
+piece line 0 **
+new piece h1 w2 dx0 dy0 dw2 dh1
+solution found 12 0
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 14 0
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 12 1
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 11 2
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 10 3
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 10 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 9 5
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 6
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 0 14
+draw map
+line read :  0 .............OOO.
+line read :  1 .............OOOO
+line read :  2 ............OOOOO
+line read :  3 ...........OOOOOO
+line read :  4 ...........OOOOOO
+line read :  5 ..........OOOOOOO
+line read :  6 .........OOOOOOOO
+line read :  7 ........OOOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w3
+piece line 0 ***
+piece line 1 ...
+new piece h2 w3 dx0 dy0 dw3 dh2
+solution found 11 0
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 11 1
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 10 2
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 9 3
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 9 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 5
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 6
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 6 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 0 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 4 9
+draw map
+line read :  0 .............OOO.
+line read :  1 .............OOOO
+line read :  2 ............OOOOO
+line read :  3 ...........OOOOOO
+line read :  4 .........OOOOOOOO
+line read :  5 ..........OOOOOOO
+line read :  6 .........OOOOOOOO
+line read :  7 ........OOOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w2
+piece line 0 **
+piece line 1 **
+new piece h2 w2 dx0 dy0 dw2 dh2
+solution found 11 1
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 10 2
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 3
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 5
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 6
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 1 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 5 8
+draw map
+line read :  0 .............OOO.
+line read :  1 .............OOOO
+line read :  2 ............OOOOO
+line read :  3 ...........OOOOOO
+line read :  4 .........OOOOOOOO
+line read :  5 ........OOOOOOOOO
+line read :  6 ........OOOOOOOOO
+line read :  7 ........OOOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w2
+piece line 0 **
+piece line 1 **
+new piece h2 w2 dx0 dy0 dw2 dh2
+solution found 11 1
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 10 2
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 3
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 1 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 1 11
+draw map
+line read :  0 .............OOO.
+line read :  1 ...........OOOOOO
+line read :  2 ...........OOOOOO
+line read :  3 ...........OOOOOO
+line read :  4 .........OOOOOOOO
+line read :  5 ........OOOOOOOOO
+line read :  6 ........OOOOOOOOO
+line read :  7 ........OOOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h1 w2
+piece line 0 **
+new piece h1 w2 dx0 dy0 dw2 dh1
+solution found 12 0
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 15 0
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 10 1
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 10 2
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 10 3
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 5
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 6
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 7 7
+draw map
+line read :  0 .............OOO.
+line read :  1 ...........OOOOOO
+line read :  2 ...........OOOOOO
+line read :  3 ...........OOOOOO
+line read :  4 .........OOOOOOOO
+line read :  5 ........OOOOOOOOO
+line read :  6 ........OOOOOOOOO
+line read :  7 .......OOOOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w2
+piece line 0 *.
+piece line 1 *.
+new piece h2 w2 dx0 dy0 dw1 dh2
+solution found 11 0
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 12 0
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 16 0
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 9 3
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 10 3
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 6
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 2 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 3 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 5 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 6 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 3 10
+draw map
+line read :  0 .............OOO.
+line read :  1 ...........OOOOOO
+line read :  2 ...........OOOOOO
+line read :  3 ..........OOOOOOO
+line read :  4 .........OOOOOOOO
+line read :  5 ........OOOOOOOOO
+line read :  6 ........OOOOOOOOO
+line read :  7 .......OOOOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w2
+piece line 0 *.
+piece line 1 **
+new piece h2 w2 dx0 dy0 dw2 dh2
+solution found 10 0
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 10 1
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 9 2
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 3
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 5
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 6 6
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 1 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 5 7
+draw map
+line read :  0 .............OOO.
+line read :  1 ...........OOOOOO
+line read :  2 ...........OOOOOO
+line read :  3 ..........OOOOOOO
+line read :  4 .........OOOOOOOO
+line read :  5 .......OOOOOOOOOO
+line read :  6 .......OOOOOOOOOO
+line read :  7 .......OOOOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h1 w2
+piece line 0 **
+new piece h1 w2 dx0 dy0 dw2 dh1
+solution found 12 0
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 15 0
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 10 1
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 10 2
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 9 3
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 6 5
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 6 6
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 6 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 0 15
+draw map
+line read :  0 .............OOOO
+line read :  1 ...........OOOOOO
+line read :  2 ...........OOOOOO
+line read :  3 ..........OOOOOOO
+line read :  4 .........OOOOOOOO
+line read :  5 .......OOOOOOOOOO
+line read :  6 .......OOOOOOOOOO
+line read :  7 .......OOOOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w3
+piece line 0 .**
+piece line 1 **.
+new piece h2 w3 dx0 dy0 dw3 dh2
+solution found 10 0
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 9 1
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 6 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 5 5
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 5 6
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 1 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 0 8
+add on map:
+remove from map:
+x 1 - 16
+y 0 - 11
+d x16 y12
+c x0 y0
+put 6 5
+draw map
+line read :  0 .............OOOO
+line read :  1 ...........OOOOOO
+line read :  2 ...........OOOOOO
+line read :  3 ..........OOOOOOO
+line read :  4 .........OOOOOOOO
+line read :  5 .......OOOOOOOOOO
+line read :  6 ......OOOOOOOOOOO
+line read :  7 .....OOOOOOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h1 w2
+piece line 0 **
+new piece h1 w2 dx0 dy0 dw2 dh1
+solution found 12 0
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 10 1
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 10 2
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 9 3
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 6 5
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 5 6
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 0 12
+draw map
+line read :  0 ............OOOOO
+line read :  1 ...........OOOOOO
+line read :  2 ...........OOOOOO
+line read :  3 ..........OOOOOOO
+line read :  4 .........OOOOOOOO
+line read :  5 .......OOOOOOOOOO
+line read :  6 ......OOOOOOOOOOO
+line read :  7 .....OOOOOOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h1 w3
+piece line 0 .**
+new piece h1 w3 dx1 dy0 dw2 dh1
+solution found 11 0
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 10 1
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 10 2
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 9 3
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 6 5
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 5 6
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 2 9
+draw map
+line read :  0 ............OOOOO
+line read :  1 ...........OOOOOO
+line read :  2 ..........OOOOOOO
+line read :  3 ..........OOOOOOO
+line read :  4 .........OOOOOOOO
+line read :  5 .......OOOOOOOOOO
+line read :  6 ......OOOOOOOOOOO
+line read :  7 .....OOOOOOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w2
+piece line 0 *.
+piece line 1 *.
+new piece h2 w2 dx0 dy0 dw1 dh2
+solution found 11 0
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 10 1
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 9 3
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 6 5
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 5 6
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 2 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 3 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 3 9
+draw map
+line read :  0 ............OOOOO
+line read :  1 ...........OOOOOO
+line read :  2 ..........OOOOOOO
+line read :  3 .........OOOOOOOO
+line read :  4 .........OOOOOOOO
+line read :  5 .......OOOOOOOOOO
+line read :  6 ......OOOOOOOOOOO
+line read :  7 .....OOOOOOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w3
+piece line 0 .*.
+piece line 1 .**
+new piece h2 w3 dx1 dy0 dw2 dh2
+solution found 10 0
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 9 1
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 2
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 8 3
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 6 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 5 5
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 4 6
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 1 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 3 7
+draw map
+line read :  0 ............OOOOO
+line read :  1 ...........OOOOOO
+line read :  2 ..........OOOOOOO
+line read :  3 ........OOOOOOOOO
+line read :  4 ........OOOOOOOOO
+line read :  5 .......OOOOOOOOOO
+line read :  6 ......OOOOOOOOOOO
+line read :  7 .....OOOOOOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h1 w2
+piece line 0 **
+new piece h1 w2 dx0 dy0 dw2 dh1
+solution found 11 0
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 10 1
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 9 2
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 3
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 6 5
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 5 6
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 0 11
+draw map
+line read :  0 ...........OOOOOO
+line read :  1 ...........OOOOOO
+line read :  2 ..........OOOOOOO
+line read :  3 ........OOOOOOOOO
+line read :  4 ........OOOOOOOOO
+line read :  5 .......OOOOOOOOOO
+line read :  6 ......OOOOOOOOOOO
+line read :  7 .....OOOOOOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h2 w3
+piece line 0 *..
+piece line 1 *..
+new piece h2 w3 dx0 dy0 dw1 dh2
+solution found 10 1
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 8 2
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 9 2
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 6 5
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 5 6
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 2 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 3 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 2 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 3 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 1 10
+draw map
+line read :  0 ...........OOOOOO
+line read :  1 ..........OOOOOOO
+line read :  2 ..........OOOOOOO
+line read :  3 ........OOOOOOOOO
+line read :  4 ........OOOOOOOOO
+line read :  5 .......OOOOOOOOOO
+line read :  6 ......OOOOOOOOOOO
+line read :  7 .....OOOOOOOOOOOO
+line read :  8 ..OOOOOOOOOOOOOOO
+line read :  9 ....XXXOOOOOOOOOO
+line read : 10 .....XOOOOOOOOOOX
+line read : 11 ....XXXXXXXOOOOOX
+line read : 12 ..XXXXXXXXXXXXXXX
+line read : 13 .XXXXXXXXXXXXXXXX
+line read : 14 XXXXXXXXXXXXXXXXX
+init img
+myinfo minx2 maxx16 miny0 maxy11 cx 9 cy 5
+ainfo minx0 maxx16 miny9 maxy14 cx 8 cy 11
+mystart 2 8   his start 14 12
+piece h1 w2
+piece line 0 **
+new piece h1 w2 dx0 dy0 dw2 dh1
+solution found 10 0
+add on map:
+remove from map:
+x 0 - 17
+y 0 - 15
+d x0 y0
+c x0 y0
+solution found 9 1
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 9 2
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 3
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 7 4
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 6 5
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 5 6
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 4 7
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+solution found 1 8
+add on map:
+remove from map:
+x 2 - 16
+y 0 - 11
+d x15 y12
+c x0 y0
+put 2 9
 draw map

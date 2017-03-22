@@ -1,2 +1,5 @@
-seed = 5379
-O: timedout
+seed = 3794
+O: error on input
+./cbarbier.filler won
+Score:
+70AGAINST37

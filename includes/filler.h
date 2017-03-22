@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 14:12:45 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/22 08:55:40 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/22 11:40:11 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include "../libft/includes/libft.h"
 # include "../minilibx_macos/mlx.h"
 # include <math.h>
+# include <pthread.h>
 
 typedef struct	s_point
 {

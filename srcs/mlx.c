@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/21 17:20:36 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/22 09:48:10 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/22 12:01:12 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ int			draw_map(t_env *e)
 		}
 		p.y++;
 	}
-	mlx_put_image_to_window(e->mlx, e->win, e->img, 0, 0);
+	mlx_put_image_to_window(e->mlx, e->win, e->img, 150, 150);
 	sleep(1);
 	return (1);
 }

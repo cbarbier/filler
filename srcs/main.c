@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/04 14:39:04 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/22 10:02:18 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/22 11:57:52 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static int	set_start(t_game *g, int i, int j)
 	}
 	return (1);
 }
-		
+
 static int	free_piece(t_game *g)
 {
 	int			index;
@@ -48,29 +48,31 @@ static int	put_piece(t_game *g)
 	return (1);
 }
 
-static int	filler_core(t_env *e, t_game *g)
+static int	filler_core(void *p)
 {
+	t_env		*e;
+	t_game		*g;
 	char		*line;
 
-	while (get_next_line(0, &line) > 0)
+	e = (t_env *)p;
+	g = e->game;
+	if (get_next_line(0, &line) <= 0)
+		return (0);
+	if (!ft_strncmp(line, "Plateau", 7))
+		get_map(g);
+	else if (!ft_strncmp(line, "Piece", 5))
 	{
-		if (!ft_strncmp(line, "Plateau", 7))
-			get_map(g);
-		else if (!ft_strncmp(line, "Piece", 5))
-		{
-			init_img(e);
-			set_info(g);
-			ft_bzero(&(g->sol), sizeof(t_info));
-			get_pieces(g, line);
-	 		compute_piece(g);
-			put_piece(g);
-			free_piece(g);
-			g->loopcount++;
-			draw_map(e);
-		}
-		mlx_loop(e->mlx);
-		ft_strdel(&line);
+		init_img(e);
+		set_info(g);
+		ft_bzero(&(g->sol), sizeof(t_info));
+		get_pieces(g, line);
+		compute_piece(g);
+		put_piece(g);
+		free_piece(g);
+		g->loopcount++;
+		draw_map(e);
 	}
+	ft_strdel(&line);
 	return (1);
 }
 
@@ -89,6 +91,7 @@ int			main(int argc, char **argv)
 		return (0);
 	init_img(&e);
 	draw_map(&e);
-	filler_core(&e, &g);
+	mlx_loop_hook(e.mlx, filler_core, (void *)&e);
+	mlx_loop(e.mlx);
 	return (0);
 }
