@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/10 11:37:55 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/22 19:32:58 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/23 19:18:28 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ static int		sol_compare(t_game *g, t_info *tmpsol)
 	int		i;
 	int		j;
 	t_piece	*p;
+	t_info	info;
 
 	p = g->piece;
 	j = 0;
@@ -76,10 +77,13 @@ static int		sol_compare(t_game *g, t_info *tmpsol)
 		}
 		j++;
 	}
+	info.x = g->width / 2;
+	info.y = g->height / 2;
 	tmpsol->dy = tmpsol->maxy - tmpsol->miny + 1;
 	tmpsol->dx = tmpsol->maxx - tmpsol->minx + 1;
 	tmpsol->avg = (g->height - tmpsol->maxy + g->width - tmpsol->maxx + tmpsol->miny + tmpsol->minx) / 4.0;
-	return (distance(&(g->sol), &(g->advpos)) - distance(tmpsol, &(g->advpos)));
+//	return (distance(&(g->sol), &(g->advpos)) - distance(tmpsol, &(g->advpos)));
+	return (distance(&(g->sol), &info) - distance(tmpsol, &info));
 }
 
 int				test_piece(t_game *g, int x, int y, int *count)

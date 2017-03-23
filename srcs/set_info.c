@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/14 09:04:03 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/22 19:31:05 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/23 18:24:51 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ static int			set_center(t_info *info)
 {
 	info->cx = info->minx + (info->maxx - info->minx) / 2;
 	info->cy = info->miny + (info->maxy - info->miny) / 2;
+	info->dx = (info->maxx - info->minx);
+	info->dy = (info->maxy - info->miny);
 	return (1);
 }
 

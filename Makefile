@@ -6,7 +6,7 @@
 #    By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/04 14:32:18 by cbarbier          #+#    #+#              #
-#    Updated: 2017/03/22 19:52:28 by cbarbier         ###   ########.fr        #
+#    Updated: 2017/03/23 13:45:25 by cbarbier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,14 +23,20 @@ SRCS			= srcs/main.c \
 				  srcs/test_piece.c \
 				  srcs/piece.c
 
+OBJS			= $(SRCS:.c=.o)
+
 all: $(NAME)
 
 display:
 	@echo "*******************"
 	@echo "***project filler**"
 	@echo "*******************\n"
-$(NAME): display $(LIB) $(SRCS) $(VISUAL)
-	@$(CC) $(CFLAGS) -o $(NAME) $(SRCS) -Llibft -lft $(MLX)
+
+%.o:%.c
+	@$(CC) $(CFLAGS) -c $< -o $@
+
+$(NAME): display $(LIB) $(OBJS) $(VISUAL)
+	@$(CC) $(CFLAGS) -o $(NAME) $(OBJS) -Llibft -lft $(MLX)
 	@echo "IA BUILT\t\t\033[0;32m✓\033[0m"
 
 $(LIB):
