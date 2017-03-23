@@ -6,11 +6,19 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/04 14:39:04 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/22 19:59:32 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/23 11:50:27 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/visual.h"
+
+static int	handle_escape(int keycode, void *data)
+{
+	(void)data;
+	if (keycode == 53)
+		exit(EXIT_SUCCESS);
+	return (0);
+}
 
 static int	get_board_size(t_game *g, char *line)
 {
@@ -63,6 +71,7 @@ int			main(void)
 	if (!init_env(&e, &g))
 		return (1);
 	mlx_loop_hook(e.mlx, visual_core, (void *)&e);
+	mlx_key_hook(e.win, handle_escape, 0);
 	mlx_loop(e.mlx);
 	return (0);
 }
