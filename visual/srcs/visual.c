@@ -6,11 +6,25 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/04 14:39:04 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/22 19:59:32 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/27 16:58:50 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/visual.h"
+
+static int	handle_key(int keycode, void *data)
+{
+	t_env *e;
+
+	e = (t_env *)data;
+	if (keycode == 53)
+		exit(EXIT_SUCCESS);
+	else if (keycode == 69 && e->delay + 1000 < 2147483647)
+		e->delay += 1000;
+	else if (keycode == 78 && e->delay - 1000 > 0)
+		e->delay -= 1000;
+	return (0);
+}
 
 static int	get_board_size(t_game *g, char *line)
 {
@@ -48,8 +62,10 @@ static int	visual_core(void *p)
 			init_game(e, g, line);
 		get_map(e, g);
 		mlx_put_image_to_window(e->mlx, e->win, e->img, 150, 150);
-		usleep(50000);
+		usleep(e->delay);
 	}
+	else if (!ft_strncmp(line, "==", 2))
+		set_score(e, g, line);
 	ft_strdel(&line);
 	return (1);
 }
@@ -63,6 +79,7 @@ int			main(void)
 	if (!init_env(&e, &g))
 		return (1);
 	mlx_loop_hook(e.mlx, visual_core, (void *)&e);
+	mlx_key_hook(e.win, handle_key, (void *)&e);
 	mlx_loop(e.mlx);
 	return (0);
 }

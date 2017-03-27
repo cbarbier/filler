@@ -6,7 +6,7 @@
 #    By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/04 14:32:18 by cbarbier          #+#    #+#              #
-#    Updated: 2017/03/22 19:57:58 by cbarbier         ###   ########.fr        #
+#    Updated: 2017/03/27 10:34:32 by cbarbier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,12 +18,16 @@ CFLAGS			= -Wall -Wextra -Werror
 MLX				= -Lminilibx_macos -lmlx -framework OpenGL -framework Appkit
 SRCS			= srcs/visual.c \
 				  srcs/map.c \
-				  srcs/mlx.c \
+				  srcs/mlx.c 
+OBJS			= $(SRCS:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(LIBMLX) $(LIB) $(SRCS)
-	@$(CC) $(CFLAGS) -o $(NAME) $(SRCS) -Llibft -lft $(MLX)
+%.o:%.c
+	@$(CC) $(CFLAGS) -c $< -o $@
+
+$(NAME): $(LIBMLX) $(LIB) $(OBJS)
+	@$(CC) $(CFLAGS) -o $(NAME) $(OBJS) -Llibft -lft $(MLX)
 	@echo "SHOWER  BUILT\t\t\033[0;32m✓\033[0m"
 
 $(LIBMLX):
@@ -34,6 +38,7 @@ $(LIB):
 	@make -C libft
 
 clean:
+	@/bin/rm -rf $(OBJS)
 	@make -C libft clean
 	@make -C minilibx_macos clean
 

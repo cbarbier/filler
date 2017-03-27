@@ -6,16 +6,11 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/10 11:37:55 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/22 19:32:58 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/27 17:00:16 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/filler.h"
-
-static void		print_info(t_game *g, t_info *i)
-{
-	ft_fprintf(g->fd, "x %d - %d\ny %d - %d\nd x%d y%d\nc x%d y%d\n", i->minx, i->maxx, i->miny, i->maxy, i->dx, i->dy, i->cx, i->cy);
-}
 
 static int		update_piece(t_game *g, int x, int y, int add)
 {
@@ -52,9 +47,9 @@ static int		set_deltas(t_game *g, t_info *tmp, int i, int j)
 	return (1);
 }
 
-static int		distance(t_info *a, t_info *b)
+static int		dist_xy(t_info *a, int x, int y)
 {
-	return (abs(a->x - b->x) + abs(a->y - b->y));
+	return (abs(a->x - x) + abs(a->y - y));
 }
 
 static int		sol_compare(t_game *g, t_info *tmpsol)
@@ -78,8 +73,8 @@ static int		sol_compare(t_game *g, t_info *tmpsol)
 	}
 	tmpsol->dy = tmpsol->maxy - tmpsol->miny + 1;
 	tmpsol->dx = tmpsol->maxx - tmpsol->minx + 1;
-	tmpsol->avg = (g->height - tmpsol->maxy + g->width - tmpsol->maxx + tmpsol->miny + tmpsol->minx) / 4.0;
-	return (distance(&(g->sol), &(g->advpos)) - distance(tmpsol, &(g->advpos)));
+	return (dist_xy(&(g->sol), g->width / 2, g->height / 2)
+			- dist_xy(tmpsol, g->width / 2, g->height / 2));
 }
 
 int				test_piece(t_game *g, int x, int y, int *count)
@@ -92,14 +87,9 @@ int				test_piece(t_game *g, int x, int y, int *count)
 	tmp.x = x;
 	tmp.y = y;
 	update_piece(g, x, y, 1);
-	ft_fprintf(g->fd, "add on map:\n");
-//	put_map(g, g->testmap);
 	if (!*count || (sol_compare(g, &tmp)) > 0)
 		g->sol = tmp;
 	update_piece(g, x, y, 0);
-	ft_fprintf(g->fd, "remove from map:\n");
-//	put_map(g, g->testmap);
-	print_info(g, &tmp);
 	*count = *count + 1;
 	return (1);
 }

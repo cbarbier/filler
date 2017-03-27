@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/21 17:20:36 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/22 20:03:26 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/27 15:47:56 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int			init_env(t_env *e, t_game *g)
 	ft_bzero(e, sizeof(t_env));
 	ft_bzero(g, sizeof(t_game));
 	e->game = g;
+	e->delay = 50000;
 	if (!(e->mlx = mlx_init()))
 		return (0);
 	if (!(e->win = mlx_new_window(e->mlx, W_WIDTH, W_HEIGHT, "filler")))

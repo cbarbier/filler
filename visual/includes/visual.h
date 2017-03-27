@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 14:12:45 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/22 20:03:58 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/27 11:12:45 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,20 @@ typedef struct	s_point
 	int		y;
 }				t_point;
 
+typedef struct	s_player
+{
+	int		id;
+	char	*name;
+}				t_player;
+
 typedef	struct	s_game
 {
-	int		fd; // to delete 
-	int		width;
-	int		height;
-	char	**map;
+	int			fd; // to delete 
+	int			width;
+	int			height;
+	char		**map;
+	t_player	p1;
+	t_player	p2;
 }				t_game;
 
 typedef struct	s_env
@@ -42,6 +50,7 @@ typedef struct	s_env
 	int		bpp;
 	int		sizeline;
 	int		d;
+	int		delay;
 }				t_env;
 
 int				get_map(t_env *e, t_game *g);
@@ -50,5 +59,6 @@ int				init_env(t_env *e, t_game *g);
 int				init_img(t_env *e);
 int				draw_case(t_env *e, int i, int j, char v);
 int				set_env_delta(t_env *e);
+void			set_score(t_env *e, t_game *g, char *line);
 
 #endif

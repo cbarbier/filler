@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/04 14:39:04 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/22 19:29:49 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/27 16:41:00 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,6 @@ static int	put_piece(t_game *g)
 	t_piece		*p;
 
 	p = g->piece;
-	ft_fprintf(g->fd, "put %d %d\n", g->sol.y - p->dy, g->sol.x - p->dx);
 	ft_printf("%d %d\n", g->sol.y - p->dy, g->sol.x - p->dx);
 	return (1);
 }
