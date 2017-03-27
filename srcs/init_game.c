@@ -6,11 +6,20 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/08 13:43:00 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/27 16:41:45 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/27 18:45:47 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/filler.h"
+
+static int	init_infos(t_game *g, t_info *info)
+{
+	info->minx = g->width;
+	info->maxx = 0;
+	info->miny = g->height;
+	info->maxy = 0;
+	return (1);
+}
 
 static int	init_map(t_game *g)
 {
@@ -20,10 +29,13 @@ static int	init_map(t_game *g)
 		return (0);
 	if (!get_map(g))
 		return (0);
+	init_infos(g, &(g->myinfo));
+	init_infos(g, &(g->ainfo));
+	set_info(g);
 	g->mystart.x = g->myinfo.minx;
 	g->mystart.y = g->myinfo.maxy;
-	g->aistart.x = g->advpos.minx;
-	g->aistart.y = g->advpos.miny;
+	g->aistart.x = g->ainfo.minx;
+	g->aistart.y = g->ainfo.miny;
 	return (1);
 }
 
@@ -51,15 +63,6 @@ static int	get_player_id(t_game *g)
 	return (1);
 }
 
-static int	init_infos(t_game *g, t_info *info)
-{
-	info->minx = g->width;
-	info->maxx = 0;
-	info->miny = g->height;
-	info->maxy = 0;
-	return (1);
-}
-
 int			init_game(t_game *g)
 {
 	ft_bzero(g, sizeof(t_game));
@@ -69,7 +72,5 @@ int			init_game(t_game *g)
 		return (0);
 	if (!init_map(g))
 		return (0);
-	init_infos(g, &(g->myinfo));
-	init_infos(g, &(g->ainfo));
 	return (1);
 }

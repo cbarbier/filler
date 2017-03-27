@@ -3,7 +3,6 @@
 # 42 / filler VM Developped by: Hcao - Abanlin #
 #                                              #
 # -------------------------------------------- #
-launched players/superjeannot.filler
 launched ./cbarbier.filler
-== O fin: 2
-== X fin: 2
+error:
+bad player

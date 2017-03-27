@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/06 14:12:45 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/22 19:41:29 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/27 18:11:12 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ typedef struct	s_info
 	int		maxx;
 	int		miny;
 	int		maxy;
+	int		adj;
 }				t_info;
 
 typedef struct	s_piece

@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/09 11:26:09 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/22 19:33:58 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/27 18:44:28 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,6 @@ int			get_map(t_game *g)
 			find_adv_last_piece(g, g->testmap[index], g->map[index], index);
 		ft_strdel(&(g->testmap[index]));
 		g->testmap[index] = ft_strdup(g->map[index]);
-		ft_fprintf(g->fd, "line read :%3d %s\n", index, g->map[index]);
 		index++;
 		ft_strdel(&line);
 	}

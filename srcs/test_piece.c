@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/10 11:37:55 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/27 17:00:16 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/27 18:25:42 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,19 @@ static int		set_deltas(t_game *g, t_info *tmp, int i, int j)
 	return (1);
 }
 
+static int		set_adj(t_game *g, t_info *tmp, int i, int j)
+{
+	if (j && g->map[j - 1][i] == g->adv)	
+		tmp->adj++;
+	if (j < g->height - 1 && g->map[j + 1][i] == g->adv)	
+		tmp->adj++;
+	if (i && g->map[j][i - 1] == g->adv)	
+		tmp->adj++;
+	if (i < g->width - 1 && g->map[j][i + 1] == g->adv)	
+		tmp->adj++;
+	return (1);
+}
+
 static int		dist_xy(t_info *a, int x, int y)
 {
 	return (abs(a->x - x) + abs(a->y - y));
@@ -57,6 +70,7 @@ static int		sol_compare(t_game *g, t_info *tmpsol)
 	int		i;
 	int		j;
 	t_piece	*p;
+	static int	adj = 0;
 
 	p = g->piece;
 	j = 0;
@@ -66,15 +80,22 @@ static int		sol_compare(t_game *g, t_info *tmpsol)
 		while (i < p->dw)
 		{
 			if (g->testmap[tmpsol->y + j][tmpsol->x + i] == g->me)
+			{
 				set_deltas(g, tmpsol, tmpsol->x + i, tmpsol->y + j);
+				set_adj(g, tmpsol, tmpsol->x + i, tmpsol->y + j);
+			}
 			i++;
 		}
 		j++;
 	}
 	tmpsol->dy = tmpsol->maxy - tmpsol->miny + 1;
 	tmpsol->dx = tmpsol->maxx - tmpsol->minx + 1;
-	return (dist_xy(&(g->sol), g->width / 2, g->height / 2)
-			- dist_xy(tmpsol, g->width / 2, g->height / 2));
+	if (!adj)
+		return (tmpsol->adj - g->sol.adj);
+	else
+		adj++;
+	return (dist_xy(&(g->sol), g->aistart.x, g->aistart.y)
+			- dist_xy(tmpsol, g->aistart.x, g->aistart.y));
 }
 
 int				test_piece(t_game *g, int x, int y, int *count)
