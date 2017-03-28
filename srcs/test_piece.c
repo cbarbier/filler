@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/10 11:37:55 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/27 18:25:42 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/28 18:26:35 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,28 +49,22 @@ static int		set_deltas(t_game *g, t_info *tmp, int i, int j)
 
 static int		set_adj(t_game *g, t_info *tmp, int i, int j)
 {
-	if (j && g->map[j - 1][i] == g->adv)	
+	if (j && g->map[j - 1][i] == g->adv)
+		tmp->adj += g->aistart.y < g->mystart.y ? 1 : 2;
+	if (j < g->height - 1 && g->map[j + 1][i] == g->adv)
+		tmp->adj += g->aistart.y > g->mystart.y ? 1 : 2;
+	if (i && g->map[j][i - 1] == g->adv)
 		tmp->adj++;
-	if (j < g->height - 1 && g->map[j + 1][i] == g->adv)	
-		tmp->adj++;
-	if (i && g->map[j][i - 1] == g->adv)	
-		tmp->adj++;
-	if (i < g->width - 1 && g->map[j][i + 1] == g->adv)	
+	if (i < g->width - 1 && g->map[j][i + 1] == g->adv)
 		tmp->adj++;
 	return (1);
 }
 
-static int		dist_xy(t_info *a, int x, int y)
-{
-	return (abs(a->x - x) + abs(a->y - y));
-}
-
 static int		sol_compare(t_game *g, t_info *tmpsol)
 {
-	int		i;
-	int		j;
-	t_piece	*p;
-	static int	adj = 0;
+	int				i;
+	int				j;
+	t_piece			*p;
 
 	p = g->piece;
 	j = 0;
@@ -90,12 +84,7 @@ static int		sol_compare(t_game *g, t_info *tmpsol)
 	}
 	tmpsol->dy = tmpsol->maxy - tmpsol->miny + 1;
 	tmpsol->dx = tmpsol->maxx - tmpsol->minx + 1;
-	if (!adj)
-		return (tmpsol->adj - g->sol.adj);
-	else
-		adj++;
-	return (dist_xy(&(g->sol), g->aistart.x, g->aistart.y)
-			- dist_xy(tmpsol, g->aistart.x, g->aistart.y));
+	return (!tmpsol->adj ? -1 : tmpsol->adj - g->sol.adj);
 }
 
 int				test_piece(t_game *g, int x, int y, int *count)

@@ -6,11 +6,16 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/14 09:04:03 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/27 16:50:22 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/28 12:14:00 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/filler.h"
+
+int					dist_xy(t_info *a, int x, int y)
+{
+	return (abs(a->x - x) + abs(a->y - y));
+}
 
 static int			set_deltas(t_info *info, int i, int j)
 {

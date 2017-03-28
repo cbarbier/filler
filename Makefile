@@ -6,7 +6,7 @@
 #    By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/04 14:32:18 by cbarbier          #+#    #+#              #
-#    Updated: 2017/03/27 10:33:05 by cbarbier         ###   ########.fr        #
+#    Updated: 2017/03/28 12:45:08 by cbarbier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,7 @@ SRCS			= srcs/main.c \
 				  srcs/compute_piece.c \
 				  srcs/set_info.c \
 				  srcs/test_piece.c \
+				  srcs/corner.c \
 				  srcs/piece.c
 
 OBJS			= $(SRCS:.c=.o)

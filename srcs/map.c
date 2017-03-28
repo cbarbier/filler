@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/09 11:26:09 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/27 18:44:28 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/28 11:52:47 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ static int	is_target_reached(t_game *g)
 		count++;
 	if (m->maxy < t->maxy)
 		count++;
-	return (count >= 3 ? 1 : 0);
+	return (count >= 0 ? 1 : 0);
 }
 
 static int	find_adv_last_piece(t_game *g, char *lastr, char *newr, int raw)
