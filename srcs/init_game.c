@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/08 13:43:00 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/27 18:45:47 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/03/29 16:00:14 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,9 @@ static int	get_board_size(t_game *g)
 {
 	char *line;
 
-	if (get_next_line(0, &line) < 0)
+	if (get_next_line(0, &line) <= 0)
+		return (0);
+	if (ft_strlen(line) < 9 || !ft_strchr(line + 8, ' '))
 		return (0);
 	g->height = ft_atoi(line + 8);
 	g->width = ft_atoi(ft_strchr(line + 8, ' ') + 1);
@@ -54,7 +56,9 @@ static int	get_player_id(t_game *g)
 {
 	char	*line;
 
-	if (get_next_line(0, &line) < 0)
+	if (get_next_line(0, &line) <= 0)
+		return (0);
+	if (ft_strlen(line) < 10)
 		return (0);
 	g->player = *(line + 10) - '0';
 	ft_strdel(&line);
