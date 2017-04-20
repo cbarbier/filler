@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/10 11:37:55 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/28 18:26:35 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/04/18 14:42:30 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,9 +50,9 @@ static int		set_deltas(t_game *g, t_info *tmp, int i, int j)
 static int		set_adj(t_game *g, t_info *tmp, int i, int j)
 {
 	if (j && g->map[j - 1][i] == g->adv)
-		tmp->adj += g->aistart.y < g->mystart.y ? 1 : 2;
+		tmp->adj++;
 	if (j < g->height - 1 && g->map[j + 1][i] == g->adv)
-		tmp->adj += g->aistart.y > g->mystart.y ? 1 : 2;
+		tmp->adj++;
 	if (i && g->map[j][i - 1] == g->adv)
 		tmp->adj++;
 	if (i < g->width - 1 && g->map[j][i + 1] == g->adv)

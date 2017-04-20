@@ -6,7 +6,7 @@
 /*   By: cbarbier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/04 14:39:04 by cbarbier          #+#    #+#             */
-/*   Updated: 2017/03/28 14:48:59 by cbarbier         ###   ########.fr       */
+/*   Updated: 2017/04/18 14:35:34 by cbarbier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,6 @@ static int	filler_core(t_game *g)
 			get_map(g);
 		else if (!ft_strncmp(line, "Piece", 5))
 		{
-			set_corner(g);
 			set_info(g);
 			ft_bzero(&(g->sol), sizeof(t_info));
 			get_pieces(g, line);
